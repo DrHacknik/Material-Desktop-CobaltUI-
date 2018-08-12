@@ -13,6 +13,8 @@ This environment uses the following libraries:
 * MaterialSkin Library 
 * QTX (Source used | Deprecated Library) 
 
+## Screenshots:
+
 [![SCEEN](https://github.com/DrHacknik/Material-Desktop-CobaltUI-/blob/master/Common/Images/Screens/Screenshot%20(10)_THUMB.png?raw=true)](https://github.com/DrHacknik/Material-Desktop-CobaltUI-/blob/master/Common/Images/Screens/Screenshot%20(10).png?raw=true)
 
 [![SCEEN](https://github.com/DrHacknik/Material-Desktop-CobaltUI-/blob/master/Common/Images/Screens/Screenshot%20(11)_THUMB.png?raw=true)](https://github.com/DrHacknik/Material-Desktop-CobaltUI-/blob/master/Common/Images/Screens/Screenshot%20(11).png?raw=true)
