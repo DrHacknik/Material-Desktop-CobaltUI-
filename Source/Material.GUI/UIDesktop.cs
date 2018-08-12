@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -123,14 +124,14 @@ namespace Material_Design_Desktop_Concept.Material.GUI
         {
             PnlTrayPanelUser.Text = Properties.Settings.Default.TmpUser;
             GetWireless();
-            if (Properties.Settings.Default.TmpWallPath == "")
+            if (!File.Exists(cd + "\\Common\\User\\Wallpapers\\_current.png"))
             {
                 this.BackgroundImage = Image.FromFile(cd + "\\Common\\User\\Wallpapers\\_default.png");
                 return;
             }
             else
             {
-                this.BackgroundImage = Image.FromFile(Properties.Settings.Default.TmpWallPath);
+                this.BackgroundImage = Image.FromFile(cd + "\\Common\\User\\Wallpapers\\_current.png");
                 return;
             }
         }
@@ -263,6 +264,33 @@ namespace Material_Design_Desktop_Concept.Material.GUI
             Properties.Settings.Default.TmpURL = "file:///" + cd + "/Common/AppData/web_cache/NoData/index.html";
             Properties.Settings.Default.Save();
             return;
+        }
+
+        private void wallpaperToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpDialogWall.ShowDialog();
+        }
+
+        private void OpDialogWall_FileOk(object sender, CancelEventArgs e)
+        {
+            Properties.Settings.Default.TmpWallPath = OpDialogWall.FileName;
+            Properties.Settings.Default.Save();
+            this.BackgroundImage = Image.FromFile(Properties.Settings.Default.TmpWallPath);
+            try
+            {
+                if (File.Exists(cd + "\\Common\\User\\Wallpapers\\_current.png"))
+                {
+                    File.Delete(cd + "\\Common\\User\\Wallpapers\\_current.png");
+                    File.Copy(Properties.Settings.Default.TmpWallPath, cd + "\\Common\\User\\Wallpapers\\_current.png", true);
+                }
+                else
+                {
+                    File.Copy(Properties.Settings.Default.TmpWallPath, cd + "\\Common\\User\\Wallpapers\\_current.png", true);
+                }
+            }
+            catch
+            {
+            }
         }
     }
 }

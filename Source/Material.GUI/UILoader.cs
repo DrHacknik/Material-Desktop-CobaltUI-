@@ -37,7 +37,15 @@ namespace Material_Design_Desktop_Concept.Material.GUI
                 Properties.Resources.Concept_Wall_1920.Save(cd + "\\Common\\User\\Wallpapers\\_default.png");
                 try
                 {
-                    File.Copy(Properties.Settings.Default.TmpWallPath, cd + "\\Common\\User\\Wallpapers\\_current.png");
+                    if (File.Exists(cd + "\\Common\\User\\Wallpapers\\_current.png"))
+                    {
+                        File.Delete(cd + "\\Common\\User\\Wallpapers\\_current.png");
+                        File.Copy(Properties.Settings.Default.TmpWallPath, cd + "\\Common\\User\\Wallpapers\\_current.png", true);
+                    }
+                    else
+                    {
+                        File.Copy(Properties.Settings.Default.TmpWallPath, cd + "\\Common\\User\\Wallpapers\\_current.png", true);
+                    }
                 }
                 catch
                 {
@@ -74,7 +82,7 @@ namespace Material_Design_Desktop_Concept.Material.GUI
         {
             try
             {
-                if (Properties.Settings.Default.TmpWallPath == null)
+                if (!File.Exists(cd + "\\Common\\User\\Wallpapers\\_current.png"))
                 {
                     this.BackgroundImage = Image.FromFile(cd + "\\Common\\User\\Wallpapers\\_default.png");
                     Cursor.Hide();
@@ -83,7 +91,7 @@ namespace Material_Design_Desktop_Concept.Material.GUI
                 }
                 else
                 {
-                    this.BackgroundImage = Image.FromFile(Properties.Settings.Default.TmpWallPath);
+                    this.BackgroundImage = Image.FromFile(cd + "\\Common\\User\\Wallpapers\\_current.png");
                     Cursor.Hide();
                     LoadDesktop();
                     return;

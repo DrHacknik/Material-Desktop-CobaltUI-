@@ -61,12 +61,14 @@
             this.uIDisableWirelessContextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.falseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uIModulesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.webViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uIModulesManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uISettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uIExitSafeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.UIAboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.uIModulesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.webViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wallpaperToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.OpDialogWall = new System.Windows.Forms.OpenFileDialog();
             this.PnlTray.SuspendLayout();
             this.PnlSelected.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcxUser)).BeginInit();
@@ -199,7 +201,7 @@
             this.PcxApps.BackgroundImage = global::Material_Design_Desktop_Concept.Properties.Resources.TrayApps;
             this.PcxApps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PcxApps.InitialImage = ((System.Drawing.Image)(resources.GetObject("PcxApps.InitialImage")));
-            this.PcxApps.Location = new System.Drawing.Point(8, 10);
+            this.PcxApps.Location = new System.Drawing.Point(16, 10);
             this.PcxApps.Name = "PcxApps";
             this.PcxApps.Size = new System.Drawing.Size(33, 30);
             this.PcxApps.TabIndex = 0;
@@ -450,7 +452,7 @@
             this.UIAboutToolStripMenuItem});
             this.CtxUI.MouseState = MaterialSkin.MouseState.HOVER;
             this.CtxUI.Name = "CtxUI";
-            this.CtxUI.Size = new System.Drawing.Size(208, 158);
+            this.CtxUI.Size = new System.Drawing.Size(208, 136);
             // 
             // uIDisableWirelessContextToolStripMenuItem
             // 
@@ -477,6 +479,22 @@
             this.falseToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.falseToolStripMenuItem.Text = "False";
             this.falseToolStripMenuItem.Click += new System.EventHandler(this.falseToolStripMenuItem_Click);
+            // 
+            // uIModulesToolStripMenuItem
+            // 
+            this.uIModulesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.webViewToolStripMenuItem,
+            this.wallpaperToolStripMenuItem});
+            this.uIModulesToolStripMenuItem.Name = "uIModulesToolStripMenuItem";
+            this.uIModulesToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.uIModulesToolStripMenuItem.Text = "UIModules";
+            // 
+            // webViewToolStripMenuItem
+            // 
+            this.webViewToolStripMenuItem.Name = "webViewToolStripMenuItem";
+            this.webViewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.webViewToolStripMenuItem.Text = "WebView";
+            this.webViewToolStripMenuItem.Click += new System.EventHandler(this.WebViewToolStripMenuItem_Click);
             // 
             // uIModulesManagementToolStripMenuItem
             // 
@@ -506,20 +524,19 @@
             this.UIAboutToolStripMenuItem.Text = "UIAbout";
             this.UIAboutToolStripMenuItem.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
-            // uIModulesToolStripMenuItem
+            // wallpaperToolStripMenuItem
             // 
-            this.uIModulesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.webViewToolStripMenuItem});
-            this.uIModulesToolStripMenuItem.Name = "uIModulesToolStripMenuItem";
-            this.uIModulesToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
-            this.uIModulesToolStripMenuItem.Text = "UIModules";
+            this.wallpaperToolStripMenuItem.Name = "wallpaperToolStripMenuItem";
+            this.wallpaperToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.wallpaperToolStripMenuItem.Text = "Wallpaper";
+            this.wallpaperToolStripMenuItem.Click += new System.EventHandler(this.wallpaperToolStripMenuItem_Click);
             // 
-            // webViewToolStripMenuItem
+            // OpDialogWall
             // 
-            this.webViewToolStripMenuItem.Name = "webViewToolStripMenuItem";
-            this.webViewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.webViewToolStripMenuItem.Text = "WebView";
-            this.webViewToolStripMenuItem.Click += new System.EventHandler(this.WebViewToolStripMenuItem_Click);
+            this.OpDialogWall.DefaultExt = "png";
+            this.OpDialogWall.Filter = "PNG|*.png|JPEG|*.jpeg|JPG|*.jpg|BMP|*.bmp|Any File (Can Cause Issues)|*.";
+            this.OpDialogWall.Title = "Select Wallpaper";
+            this.OpDialogWall.FileOk += new System.ComponentModel.CancelEventHandler(this.OpDialogWall_FileOk);
             // 
             // UIDesktop
             // 
@@ -612,5 +629,7 @@
         private System.Windows.Forms.ToolStripMenuItem UIAboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem uIModulesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem webViewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem wallpaperToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog OpDialogWall;
     }
 }

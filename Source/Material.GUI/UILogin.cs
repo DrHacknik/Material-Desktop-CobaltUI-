@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Material_Design_Desktop_Concept.Material.Web;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,14 +46,21 @@ namespace Material_Design_Desktop_Concept.Material.GUI
             LblUserPass.Text = Properties.Settings.Default.TmpUser;
             try
             {
-                if (Properties.Settings.Default.TmpWallPath == null)
+                if (!File.Exists(cd + "\\Common\\User\\Wallpapers\\_current.png"))
                 {
                     this.BackgroundImage = Image.FromFile(cd + "\\Common\\User\\Wallpapers\\_default.png");
                     return;
                 }
                 else
                 {
-                    this.BackgroundImage = Image.FromFile(Properties.Settings.Default.TmpWallPath);
+                    try
+                    {
+                        File.Copy(Properties.Settings.Default.TmpWallPath, cd + "\\Common\\User\\Wallpapers\\_current.png", true);
+                    }
+                    catch
+                    {
+                    }
+                    this.BackgroundImage = Image.FromFile(cd + "\\Common\\User\\Wallpapers\\_current.png");
                     return;
                 }
             }
@@ -81,6 +90,22 @@ namespace Material_Design_Desktop_Concept.Material.GUI
         private void TmrTIme_Tick(object sender, EventArgs e)
         {
             LblTime.Text = DateTime.Now.ToShortTimeString();
+        }
+
+        private void LblGoogle_Click(object sender, EventArgs e)
+        {
+            this.Enabled = false;
+            this.TopMost = false;
+            PcxUser.Visible = false;
+            LblUserPass.Visible = false;
+
+            Form _UIWebView = new UIWebView();
+            _UIWebView.Show();
+            _UIWebView.ControlBox = false;
+
+            Properties.Settings.Default.TmpURL = "https://accounts.google.com/AddSession/signinchooser";
+            Properties.Settings.Default.Save();
+            return;
         }
     }
 }

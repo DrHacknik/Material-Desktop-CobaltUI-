@@ -24,8 +24,8 @@ namespace Material_Design_Desktop_Concept.Material.Web
         private string cd = Application.StartupPath;
         public const string WebViewDefURL = "https://accounts.google.com/AddSession/signinchooser";
         private const string WebViewTabDefURL = "https://accounts.google.com/AddSession/signinchooser";
+        public bool Movable = false;
 
-        // Default to a small increment:
         private const double ZoomIncrement = 0.10;
 
         public UIWebView()
@@ -54,6 +54,7 @@ namespace Material_Design_Desktop_Concept.Material.Web
         {
             CEFCleanup();
             CefSettings settings = new CefSettings();
+
             settings.CachePath = cd + "\\Common\\AppData\\web_cache";
             Cef.Initialize(settings);
             chromeBrowser = new ChromiumWebBrowser(Properties.Settings.Default.TmpURL);
@@ -77,9 +78,16 @@ namespace Material_Design_Desktop_Concept.Material.Web
 
                 if (!File.Exists(cd + "\\Common\\AppData\\web_cache\\NoData\\index.html"))
                 {
-                    using (var HTML = new WebClient())
+                    try
                     {
-                        HTML.DownloadFile("https://github.com/DrHacknik/Material-Desktop-CobaltUI-/raw/master/Common/Com/index.html", cd + "\\Common\\AppData\\web_cache\\NoData\\index.html");
+                        using (var HTML = new WebClient())
+                        {
+                            HTML.DownloadFile("https://github.com/DrHacknik/Material-Desktop-CobaltUI-/raw/master/Common/Com/index.html", cd + "\\Common\\AppData\\web_cache\\NoData\\index.html");
+                        }
+                    }
+                    catch
+                    {
+                        return;
                     }
                 }
 
@@ -101,6 +109,10 @@ namespace Material_Design_Desktop_Concept.Material.Web
         }
 
         private void UIWebView_FormClosed(object sender, FormClosedEventArgs e)
+        {
+        }
+
+        private void TmrCheckMovable_Tick(object sender, EventArgs e)
         {
         }
     }

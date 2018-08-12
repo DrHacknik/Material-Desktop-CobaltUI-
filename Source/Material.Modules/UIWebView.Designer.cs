@@ -28,7 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.TmrCheckMovable = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
+            // 
+            // TmrCheckMovable
+            // 
+            this.TmrCheckMovable.Interval = 15;
+            this.TmrCheckMovable.Tick += new System.EventHandler(this.TmrCheckMovable_Tick);
             // 
             // UIWebView
             // 
@@ -51,5 +58,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer TmrCheckMovable;
     }
 }

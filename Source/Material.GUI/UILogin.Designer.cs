@@ -32,15 +32,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UILogin));
             this.TmrFadeOut = new System.Windows.Forms.Timer(this.components);
             this.TmrCheckEnter = new System.Windows.Forms.Timer(this.components);
-            this.PcxBackground = new System.Windows.Forms.Panel();
-            this.PcxUser = new System.Windows.Forms.PictureBox();
+            this.TmrTIme = new System.Windows.Forms.Timer(this.components);
             this.LblUserPass = new System.Windows.Forms.Label();
+            this.PcxUser = new System.Windows.Forms.PictureBox();
             this.PnlTrayLoginTime = new System.Windows.Forms.Panel();
             this.LblTime = new System.Windows.Forms.Label();
-            this.TmrTIme = new System.Windows.Forms.Timer(this.components);
-            this.PcxBackground.SuspendLayout();
+            this.LblGoogle = new System.Windows.Forms.Label();
+            this.PcxBackground = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.PcxUser)).BeginInit();
             this.PnlTrayLoginTime.SuspendLayout();
+            this.PcxBackground.SuspendLayout();
             this.SuspendLayout();
             // 
             // TmrFadeOut
@@ -54,31 +55,11 @@
             this.TmrCheckEnter.Interval = 1;
             this.TmrCheckEnter.Tick += new System.EventHandler(this.TmrCheckEnter_Tick);
             // 
-            // PcxBackground
+            // TmrTIme
             // 
-            this.PcxBackground.BackColor = System.Drawing.Color.Transparent;
-            this.PcxBackground.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxBackground.BackgroundImage")));
-            this.PcxBackground.Controls.Add(this.PnlTrayLoginTime);
-            this.PcxBackground.Controls.Add(this.PcxUser);
-            this.PcxBackground.Controls.Add(this.LblUserPass);
-            this.PcxBackground.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PcxBackground.Location = new System.Drawing.Point(0, 0);
-            this.PcxBackground.Name = "PcxBackground";
-            this.PcxBackground.Size = new System.Drawing.Size(1280, 720);
-            this.PcxBackground.TabIndex = 3;
-            this.PcxBackground.Click += new System.EventHandler(this.PcxBackground_Click);
-            // 
-            // PcxUser
-            // 
-            this.PcxUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.PcxUser.BackColor = System.Drawing.Color.Transparent;
-            this.PcxUser.BackgroundImage = global::Material_Design_Desktop_Concept.Properties.Resources.if_account_circle_326497_White;
-            this.PcxUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxUser.Location = new System.Drawing.Point(578, 239);
-            this.PcxUser.Name = "PcxUser";
-            this.PcxUser.Size = new System.Drawing.Size(128, 128);
-            this.PcxUser.TabIndex = 4;
-            this.PcxUser.TabStop = false;
+            this.TmrTIme.Enabled = true;
+            this.TmrTIme.Interval = 1;
+            this.TmrTIme.Tick += new System.EventHandler(this.TmrTIme_Tick);
             // 
             // LblUserPass
             // 
@@ -93,6 +74,18 @@
             this.LblUserPass.Text = "%PASS%";
             this.LblUserPass.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LblUserPass.Click += new System.EventHandler(this.LblUserPass_Click);
+            // 
+            // PcxUser
+            // 
+            this.PcxUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.PcxUser.BackColor = System.Drawing.Color.Transparent;
+            this.PcxUser.BackgroundImage = global::Material_Design_Desktop_Concept.Properties.Resources.if_account_circle_326497_White;
+            this.PcxUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxUser.Location = new System.Drawing.Point(578, 239);
+            this.PcxUser.Name = "PcxUser";
+            this.PcxUser.Size = new System.Drawing.Size(128, 128);
+            this.PcxUser.TabIndex = 4;
+            this.PcxUser.TabStop = false;
             // 
             // PnlTrayLoginTime
             // 
@@ -117,11 +110,34 @@
             this.LblTime.Text = "1:19 PM";
             this.LblTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TmrTIme
+            // LblGoogle
             // 
-            this.TmrTIme.Enabled = true;
-            this.TmrTIme.Interval = 1;
-            this.TmrTIme.Tick += new System.EventHandler(this.TmrTIme_Tick);
+            this.LblGoogle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.LblGoogle.BackColor = System.Drawing.Color.Transparent;
+            this.LblGoogle.Font = new System.Drawing.Font("Segoe UI Light", 8F);
+            this.LblGoogle.ForeColor = System.Drawing.Color.White;
+            this.LblGoogle.Location = new System.Drawing.Point(12, 675);
+            this.LblGoogle.Name = "LblGoogle";
+            this.LblGoogle.Size = new System.Drawing.Size(117, 33);
+            this.LblGoogle.TabIndex = 6;
+            this.LblGoogle.Text = "Sign in with Google";
+            this.LblGoogle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblGoogle.Click += new System.EventHandler(this.LblGoogle_Click);
+            // 
+            // PcxBackground
+            // 
+            this.PcxBackground.BackColor = System.Drawing.Color.Transparent;
+            this.PcxBackground.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxBackground.BackgroundImage")));
+            this.PcxBackground.Controls.Add(this.LblGoogle);
+            this.PcxBackground.Controls.Add(this.PnlTrayLoginTime);
+            this.PcxBackground.Controls.Add(this.PcxUser);
+            this.PcxBackground.Controls.Add(this.LblUserPass);
+            this.PcxBackground.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PcxBackground.Location = new System.Drawing.Point(0, 0);
+            this.PcxBackground.Name = "PcxBackground";
+            this.PcxBackground.Size = new System.Drawing.Size(1280, 720);
+            this.PcxBackground.TabIndex = 3;
+            this.PcxBackground.Click += new System.EventHandler(this.PcxBackground_Click);
             // 
             // UILogin
             // 
@@ -145,9 +161,9 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.UILogin_Load);
             this.Click += new System.EventHandler(this.UILogin_Click);
-            this.PcxBackground.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PcxUser)).EndInit();
             this.PnlTrayLoginTime.ResumeLayout(false);
+            this.PcxBackground.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -156,11 +172,12 @@
 
         private System.Windows.Forms.Timer TmrFadeOut;
         private System.Windows.Forms.Timer TmrCheckEnter;
-        private System.Windows.Forms.Panel PcxBackground;
-        private System.Windows.Forms.PictureBox PcxUser;
+        private System.Windows.Forms.Timer TmrTIme;
         private System.Windows.Forms.Label LblUserPass;
+        private System.Windows.Forms.PictureBox PcxUser;
         private System.Windows.Forms.Panel PnlTrayLoginTime;
         private System.Windows.Forms.Label LblTime;
-        private System.Windows.Forms.Timer TmrTIme;
+        private System.Windows.Forms.Label LblGoogle;
+        private System.Windows.Forms.Panel PcxBackground;
     }
 }
