@@ -24,8 +24,6 @@ namespace Material_Design_Desktop_Concept.Material.Web
         // Default to a small increment:
         private const double ZoomIncrement = 0.10;
 
-        private bool multiThreadedMessageLoopEnabled;
-
         public UIWebView()
         {
             InitializeChromium();
@@ -35,17 +33,35 @@ namespace Material_Design_Desktop_Concept.Material.Web
 
         public ChromiumWebBrowser chromeBrowser;
 
+        private void HideScrollbars(object sender, FrameLoadEndEventArgs args)
+        {
+            if (args.Frame.IsMain)
+            {
+                args
+                    .Browser
+                    .MainFrame
+                    .ExecuteJavaScriptAsync(
+                    "document.body.style.overflow = 'hidden'");
+            }
+        }
+
         public void InitializeChromium()
         {
-            CefSettings settings = new CefSettings();
-            settings.CachePath = cd + "\\Common\\System\\data\\web_cache\\Chromium_";
-            Cef.Initialize(settings);
-            chromeBrowser = new ChromiumWebBrowser("http://www.google.com");
+            if (File.Exists(cd + "\\Common\\AppData\\web_cache\\Cookies") && File.Exists(cd + "\\Common\\AppData\\web_cache\\Cookies-journal"))
+            {
+                File.Delete(cd + "\\Common\\AppData\\web_cache\\Cookies");
+                File.Delete(cd + "\\Common\\AppData\\web_cache\\Cookie-journal");
+            }
             if (!Directory.Exists(cd + "\\Common\\AppData\\web_cache"))
             {
                 Directory.CreateDirectory(cd + "\\Common\\AppData\\web_cache");
             }
+            CefSettings settings = new CefSettings();
+            settings.CachePath = cd + "\\Common\\AppData\\web_cache";
+            Cef.Initialize(settings);
+            chromeBrowser = new ChromiumWebBrowser("https://accounts.google.com/AddSession/signinchooser");
 
+            chromeBrowser.FrameLoadEnd += HideScrollbars;
             this.Controls.Add(chromeBrowser);
         }
 
@@ -54,6 +70,15 @@ namespace Material_Design_Desktop_Concept.Material.Web
             chromeBrowser.Dock = DockStyle.Bottom;
             chromeBrowser.Height = 475;
             return;
+        }
+
+        private void UIWebView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Cef.Shutdown();
+        }
+
+        private void UIWebView_FormClosed(object sender, FormClosedEventArgs e)
+        {
         }
     }
 }
