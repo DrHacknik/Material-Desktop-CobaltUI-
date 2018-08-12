@@ -255,10 +255,11 @@ namespace Material_Design_Desktop_Concept.Material.GUI
             return;
         }
 
-        private void webViewToolStripMenuItem_Click(object sender, EventArgs e)
+        private void WebViewToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form _UIWebView = new UIWebView();
             _UIWebView.Show();
+            UIWebView.WebViewURL = "file://" + cd + "\\Common\\AppData\\web_cache\\NoData\\index.html";
             return;
         }
     }

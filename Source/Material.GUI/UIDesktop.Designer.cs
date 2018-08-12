@@ -519,7 +519,7 @@
             this.webViewToolStripMenuItem.Name = "webViewToolStripMenuItem";
             this.webViewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.webViewToolStripMenuItem.Text = "WebView";
-            this.webViewToolStripMenuItem.Click += new System.EventHandler(this.webViewToolStripMenuItem_Click);
+            this.webViewToolStripMenuItem.Click += new System.EventHandler(this.WebViewToolStripMenuItem_Click);
             // 
             // UIDesktop
             // 

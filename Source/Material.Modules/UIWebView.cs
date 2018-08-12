@@ -18,8 +18,10 @@ namespace Material_Design_Desktop_Concept.Material.Web
 {
     public partial class UIWebView : MaterialForm
     {
+        public static string WebViewURL = null;
         private string cd = Application.StartupPath;
-        private const string DefaultUrlForAddedTabs = "https://accounts.google.com/AddSession/signinchooser";
+        public const string WebViewDefURL = "https://accounts.google.com/AddSession/signinchooser";
+        private const string WebViewTabDefURL = "https://accounts.google.com/AddSession/signinchooser";
 
         // Default to a small increment:
         private const double ZoomIncrement = 0.10;
@@ -47,6 +49,18 @@ namespace Material_Design_Desktop_Concept.Material.Web
 
         public void InitializeChromium()
         {
+            CEFCleanup();
+            CefSettings settings = new CefSettings();
+            settings.CachePath = cd + "\\Common\\AppData\\web_cache";
+            Cef.Initialize(settings);
+            chromeBrowser = new ChromiumWebBrowser(WebViewURL);
+
+            chromeBrowser.FrameLoadEnd += HideScrollbars;
+            this.Controls.Add(chromeBrowser);
+        }
+
+        private void CEFCleanup()
+        {
             if (File.Exists(cd + "\\Common\\AppData\\web_cache\\Cookies") && File.Exists(cd + "\\Common\\AppData\\web_cache\\Cookies-journal"))
             {
                 File.Delete(cd + "\\Common\\AppData\\web_cache\\Cookies");
@@ -56,13 +70,7 @@ namespace Material_Design_Desktop_Concept.Material.Web
             {
                 Directory.CreateDirectory(cd + "\\Common\\AppData\\web_cache");
             }
-            CefSettings settings = new CefSettings();
-            settings.CachePath = cd + "\\Common\\AppData\\web_cache";
-            Cef.Initialize(settings);
-            chromeBrowser = new ChromiumWebBrowser("https://accounts.google.com/AddSession/signinchooser");
-
-            chromeBrowser.FrameLoadEnd += HideScrollbars;
-            this.Controls.Add(chromeBrowser);
+            return;
         }
 
         private void UIWebView_Load(object sender, EventArgs e)
