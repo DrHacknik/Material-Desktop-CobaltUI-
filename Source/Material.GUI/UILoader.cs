@@ -35,7 +35,13 @@ namespace Material_Design_Desktop_Concept.Material.GUI
                 File.Create(cd + "\\Config.xml");
 
                 Properties.Resources.Concept_Wall_1920.Save(cd + "\\Common\\User\\Wallpapers\\_default.png");
-                File.Copy(Properties.Settings.Default.TmpWallPath, cd + "\\Common\\User\\Wallpapers\\_current.png");
+                try
+                {
+                    File.Copy(Properties.Settings.Default.TmpWallPath, cd + "\\Common\\User\\Wallpapers\\_current.png");
+                }
+                catch
+                {
+                }
                 return;
             }
 
@@ -66,16 +72,26 @@ namespace Material_Design_Desktop_Concept.Material.GUI
 
         private void UILoader_Load(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.TmpWallPath == "")
+            try
             {
-                this.BackgroundImage = Image.FromFile(cd + "\\Common\\User\\Wallpapers\\_default.png");
-                Cursor.Hide();
-                LoadDesktop();
-                return;
+                if (Properties.Settings.Default.TmpWallPath == null)
+                {
+                    this.BackgroundImage = Image.FromFile(cd + "\\Common\\User\\Wallpapers\\_default.png");
+                    Cursor.Hide();
+                    LoadDesktop();
+                    return;
+                }
+                else
+                {
+                    this.BackgroundImage = Image.FromFile(Properties.Settings.Default.TmpWallPath);
+                    Cursor.Hide();
+                    LoadDesktop();
+                    return;
+                }
             }
-            else
+            catch
             {
-                this.BackgroundImage = Image.FromFile(Properties.Settings.Default.TmpWallPath);
+                this.BackgroundImage = Properties.Resources.Concept_Wall_1920;
                 Cursor.Hide();
                 LoadDesktop();
                 return;

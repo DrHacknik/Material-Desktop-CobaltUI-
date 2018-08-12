@@ -42,14 +42,22 @@ namespace Material_Design_Desktop_Concept.Material.GUI
         private void UILogin_Load(object sender, EventArgs e)
         {
             LblUserPass.Text = Properties.Settings.Default.TmpUser;
-            if (Properties.Settings.Default.TmpWallPath == "")
+            try
             {
-                this.BackgroundImage = Image.FromFile(cd + "\\Common\\User\\Wallpapers\\_default.png");
-                return;
+                if (Properties.Settings.Default.TmpWallPath == null)
+                {
+                    this.BackgroundImage = Image.FromFile(cd + "\\Common\\User\\Wallpapers\\_default.png");
+                    return;
+                }
+                else
+                {
+                    this.BackgroundImage = Image.FromFile(Properties.Settings.Default.TmpWallPath);
+                    return;
+                }
             }
-            else
+            catch
             {
-                this.BackgroundImage = Image.FromFile(Properties.Settings.Default.TmpWallPath);
+                this.BackgroundImage = Properties.Resources.Concept_Wall_1920;
                 return;
             }
         }

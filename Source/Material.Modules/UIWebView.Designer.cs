@@ -43,6 +43,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WebView";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.UIWebView_Load);
             this.ResumeLayout(false);
 
         }
