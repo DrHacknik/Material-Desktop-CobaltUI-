@@ -1,5 +1,5 @@
 ![logo](https://github.com/DrHacknik/Material-Desktop-CobaltUI-/blob/master/Common/Images/Logos/Logo_128.png?raw=true) 
-# Material Desktop Concept
+# Material Desktop Concept (Project CobaltUI)
 
 ### Current version: 1.0.0.0 | Master
 
