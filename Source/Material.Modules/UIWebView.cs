@@ -13,6 +13,7 @@ using CefSharp;
 using CefSharp.WinForms;
 using Material_Design_Desktop_Concept.Material.GUI;
 using System.IO;
+using System.Reflection;
 
 namespace Material_Design_Desktop_Concept.Material.Web
 {
@@ -66,9 +67,12 @@ namespace Material_Design_Desktop_Concept.Material.Web
                 File.Delete(cd + "\\Common\\AppData\\web_cache\\Cookies");
                 File.Delete(cd + "\\Common\\AppData\\web_cache\\Cookie-journal");
             }
-            if (!Directory.Exists(cd + "\\Common\\AppData\\web_cache"))
+            if (!Directory.Exists(cd + "\\Common\\AppData\\web_cache") || !Directory.Exists(cd + "\\Common\\AppData\\web_cache\\NoData"))
             {
                 Directory.CreateDirectory(cd + "\\Common\\AppData\\web_cache");
+                //File.WriteAllLines(cd + "\\Common\\AppData\\web_cache\\NoData\\index.html", Properties.Resources.index);
+                File.WriteAllText(cd + "\\Common\\AppData\\web_cache\\NoData\\index.html", "");
+                Properties.Resources.Logo_128_Chrom.Save(cd + "\\Common\\AppData\\web_cache\\NoData\\Logo_128_Chrom.png");
             }
             return;
         }

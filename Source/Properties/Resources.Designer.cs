@@ -501,6 +501,26 @@ namespace Material_Design_Desktop_Concept.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;Logo_128_Chrom&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
+        ///&lt;h2 style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;No Data&lt;/strong&gt;&lt;/h2&gt;.
+        /// </summary>
+        internal static string index {
+            get {
+                return ResourceManager.GetString("index", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_128_Chrom {
+            get {
+                object obj = ResourceManager.GetObject("Logo_128_Chrom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap TrayApps {
