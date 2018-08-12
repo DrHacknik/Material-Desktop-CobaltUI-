@@ -9,7 +9,10 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="TmpWallPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\luked\Pictures\Ryuko\kill-la-kill-1920x1080.jpg</Value>
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TmpURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>

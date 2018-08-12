@@ -259,7 +259,9 @@ namespace Material_Design_Desktop_Concept.Material.GUI
         {
             Form _UIWebView = new UIWebView();
             _UIWebView.Show();
-            UIWebView.WebViewURL = "file://" + cd + "\\Common\\AppData\\web_cache\\NoData\\index.html";
+
+            Properties.Settings.Default.TmpURL = "file:///" + cd + "/Common/AppData/web_cache/NoData/index.html";
+            Properties.Settings.Default.Save();
             return;
         }
     }

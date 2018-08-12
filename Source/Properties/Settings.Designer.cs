@@ -49,13 +49,25 @@ namespace Material_Design_Desktop_Concept.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\luked\\Pictures\\Ryuko\\kill-la-kill-1920x1080.jpg")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string TmpWallPath {
             get {
                 return ((string)(this["TmpWallPath"]));
             }
             set {
                 this["TmpWallPath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string TmpURL {
+            get {
+                return ((string)(this["TmpURL"]));
+            }
+            set {
+                this["TmpURL"] = value;
             }
         }
     }

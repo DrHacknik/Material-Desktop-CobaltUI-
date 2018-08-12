@@ -14,12 +14,13 @@ using CefSharp.WinForms;
 using Material_Design_Desktop_Concept.Material.GUI;
 using System.IO;
 using System.Reflection;
+using System.Net;
 
 namespace Material_Design_Desktop_Concept.Material.Web
 {
     public partial class UIWebView : MaterialForm
     {
-        public static string WebViewURL = null;
+        public string WebViewURL;
         private string cd = Application.StartupPath;
         public const string WebViewDefURL = "https://accounts.google.com/AddSession/signinchooser";
         private const string WebViewTabDefURL = "https://accounts.google.com/AddSession/signinchooser";
@@ -29,6 +30,7 @@ namespace Material_Design_Desktop_Concept.Material.Web
 
         public UIWebView()
         {
+            WebViewURL = Properties.Settings.Default.TmpURL;
             InitializeChromium();
             MaterialSkinManager.Instance.AddFormToManage(this);
             InitializeComponent();
@@ -54,7 +56,7 @@ namespace Material_Design_Desktop_Concept.Material.Web
             CefSettings settings = new CefSettings();
             settings.CachePath = cd + "\\Common\\AppData\\web_cache";
             Cef.Initialize(settings);
-            chromeBrowser = new ChromiumWebBrowser(WebViewURL);
+            chromeBrowser = new ChromiumWebBrowser(Properties.Settings.Default.TmpURL);
 
             chromeBrowser.FrameLoadEnd += HideScrollbars;
             this.Controls.Add(chromeBrowser);
@@ -70,8 +72,17 @@ namespace Material_Design_Desktop_Concept.Material.Web
             if (!Directory.Exists(cd + "\\Common\\AppData\\web_cache") || !Directory.Exists(cd + "\\Common\\AppData\\web_cache\\NoData"))
             {
                 Directory.CreateDirectory(cd + "\\Common\\AppData\\web_cache");
+                Directory.CreateDirectory(cd + "\\Common\\AppData\\web_cache\\NoData");
                 //File.WriteAllLines(cd + "\\Common\\AppData\\web_cache\\NoData\\index.html", Properties.Resources.index);
-                File.WriteAllText(cd + "\\Common\\AppData\\web_cache\\NoData\\index.html", "");
+
+                if (!File.Exists(cd + "\\Common\\AppData\\web_cache\\NoData\\index.html"))
+                {
+                    using (var HTML = new WebClient())
+                    {
+                        HTML.DownloadFile("https://github.com/DrHacknik/Material-Desktop-CobaltUI-/raw/master/Common/Com/index.html", cd + "\\Common\\AppData\\web_cache\\NoData\\index.html");
+                    }
+                }
+
                 Properties.Resources.Logo_128_Chrom.Save(cd + "\\Common\\AppData\\web_cache\\NoData\\Logo_128_Chrom.png");
             }
             return;
