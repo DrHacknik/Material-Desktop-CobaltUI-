@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Material_Design_Desktop_Concept.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TmpUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Doc</Value>
+    </Setting>
+    <Setting Name="TmpPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TmpWallPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\luked\Pictures\Ryuko\kill-la-kill-1920x1080.jpg</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
