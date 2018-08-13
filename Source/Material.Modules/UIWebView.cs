@@ -36,7 +36,7 @@ namespace Material_Design_Desktop_Concept.Material.Web
             InitializeComponent();
         }
 
-        public ChromiumWebBrowser chromeBrowser;
+        public ChromiumWebBrowser WebViewBroser;
 
         private void HideScrollbars(object sender, FrameLoadEndEventArgs args)
         {
@@ -57,10 +57,10 @@ namespace Material_Design_Desktop_Concept.Material.Web
 
             settings.CachePath = cd + "\\Common\\AppData\\web_cache";
             Cef.Initialize(settings);
-            chromeBrowser = new ChromiumWebBrowser(Properties.Settings.Default.TmpURL);
+            WebViewBroser = new ChromiumWebBrowser(Properties.Settings.Default.TmpURL);
 
-            chromeBrowser.FrameLoadEnd += HideScrollbars;
-            this.Controls.Add(chromeBrowser);
+            WebViewBroser.FrameLoadEnd += HideScrollbars;
+            this.Controls.Add(WebViewBroser);
         }
 
         private void CEFCleanup()
@@ -98,8 +98,8 @@ namespace Material_Design_Desktop_Concept.Material.Web
 
         private void UIWebView_Load(object sender, EventArgs e)
         {
-            chromeBrowser.Dock = DockStyle.Bottom;
-            chromeBrowser.Height = 475;
+            WebViewBroser.Dock = DockStyle.Bottom;
+            WebViewBroser.Height = 475;
             return;
         }
 
