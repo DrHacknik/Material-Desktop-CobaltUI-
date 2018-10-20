@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Material.Core\AppLoader.cs" />
+    <Compile Include="Material.Core\IniParser.cs" />
     <Compile Include="Material.Core\ParseConfig.cs" />
     <Compile Include="Material.Core\ParseModules.cs" />
     <Compile Include="Material.GUI\UIAbout.cs">
@@ -98,6 +99,12 @@
     </Compile>
     <Compile Include="Material.GUI\UIModules.Designer.cs">
       <DependentUpon>UIModules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material.GUI\UINotification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Material.GUI\UINotification.Designer.cs">
+      <DependentUpon>UINotification.cs</DependentUpon>
     </Compile>
     <Compile Include="Material.GUI\UISettings.cs">
       <SubType>Form</SubType>
@@ -136,6 +143,12 @@
       <DependentUpon>UIFileView.cs</DependentUpon>
     </Compile>
     <Compile Include="Material.Modules\ModuleInstaller.cs" />
+    <Compile Include="Material.Modules\UIWeather.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Material.Modules\UIWeather.Designer.cs">
+      <DependentUpon>UIWeather.cs</DependentUpon>
+    </Compile>
     <Compile Include="Material.Modules\UIWebView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,27 +173,33 @@
     <EmbeddedResource Include="Material.GUI\UIModules.resx">
       <DependentUpon>UIModules.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Material.GUI\UINotification.resx">
+      <DependentUpon>UINotification.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Material.GUI\UISettings.resx">
       <DependentUpon>UISettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material.Modules\UIWeather.resx">
+      <DependentUpon>UIWeather.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Material.Modules\UIWebView.resx">
       <DependentUpon>UIWebView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -343,6 +362,61 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Logo.ico" />
+    <None Include="Resources_New\Concept_Wall_1920.png" />
+    <None Include="Resources_New\TraySel.png" />
+    <None Include="Resources_New\TrayPanelNotifSel.png" />
+    <None Include="Resources_New\TrayPanelNotif.png" />
+    <None Include="Resources_New\TrayPanelAudio.png" />
+    <None Include="Resources_New\TrayAppsInactive.png" />
+    <None Include="Resources_New\TrayApps.png" />
+    <None Include="Resources_New\TrapApps.png" />
+    <None Include="Resources_New\Logo_128_Chrom.png" />
+    <None Include="Resources_New\index.html" />
+    <None Include="Resources_New\if_share4_216719_White.png" />
+    <None Include="Resources_New\if_share4_216719.png" />
+    <None Include="Resources_New\if_settings-bluetooth_326694_White.png" />
+    <None Include="Resources_New\if_settings-bluetooth_326694.png" />
+    <None Include="Resources_New\if_lock__private__privacy__protection_2538743_White.png" />
+    <None Include="Resources_New\if_lock__private__privacy__protection_2538743.png" />
+    <None Include="Resources_New\if_icon-bluetooth_211632_White.png" />
+    <None Include="Resources_New\if_icon-bluetooth_211632.png" />
+    <None Include="Resources_New\if_ic_wifi_lock_48px_352226_White.png" />
+    <None Include="Resources_New\if_ic_wifi_lock_48px_352226.png" />
+    <None Include="Resources_New\if_ic_signal_wifi_off_48px_352130_White.png" />
+    <None Include="Resources_New\if_ic_signal_wifi_off_48px_352130.png" />
+    <None Include="Resources_New\if_ic_signal_wifi_4_bar_48px_352129_White.png" />
+    <None Include="Resources_New\if_ic_signal_wifi_4_bar_48px_352129.png" />
+    <None Include="Resources_New\if_ic_signal_wifi_1_bar_48px_352128_White.png" />
+    <None Include="Resources_New\if_ic_signal_wifi_1_bar_48px_352128.png" />
+    <None Include="Resources_New\if_ic_network_wifi_48px_352564.png" />
+    <None Include="Resources_New\if_ic_battery_std_48px_352053_White.png" />
+    <None Include="Resources_New\if_ic_battery_std_48px_352053.png" />
+    <None Include="Resources_New\if_ic_battery_charging_full_48px_352052_White.png" />
+    <None Include="Resources_New\if_ic_battery_charging_full_48px_352052.png" />
+    <None Include="Resources_New\if_ic_battery_alert_48px_352045_White.png" />
+    <None Include="Resources_New\if_ic_battery_alert_48px_352045.png" />
+    <None Include="Resources_New\if_ic_battery_90_48px_352044_White.png" />
+    <None Include="Resources_New\if_ic_battery_90_48px_352044.png" />
+    <None Include="Resources_New\if_bluetooth-searching_326512_White.png" />
+    <None Include="Resources_New\if_bluetooth-searching_326512.png" />
+    <None Include="Resources_New\if_bluetooth-disabled_326507_White.png" />
+    <None Include="Resources_New\if_bluetooth-disabled_326507.png" />
+    <None Include="Resources_New\if_bluetooth-connected_326502_White.png" />
+    <None Include="Resources_New\if_bluetooth-connected_326502.png" />
+    <None Include="Resources_New\if_bluetooth_326516_White.png" />
+    <None Include="Resources_New\if_bluetooth_326516.png" />
+    <None Include="Resources_New\if_account-circle_326497_White_Sel.png" />
+    <None Include="Resources_New\if_account-circle_326497_White.png" />
+    <None Include="Resources_New\if_account-circle_326497.png" />
+    <None Include="Resources_New\if_98_111048_White.png" />
+    <None Include="Resources_New\if_98_111048.png" />
+    <None Include="Resources_New\if_060_Off_183189_White_Sel.png" />
+    <None Include="Resources_New\if_060_Off_183189_White.png" />
+    <None Include="Resources_New\if_060_Off_183189.png" />
+    <None Include="Resources_New\if_47_111099_White.png" />
+    <None Include="Resources_New\if_47_111099.png" />
+    <None Include="Resources\TrayAppsInactive.png" />
+    <None Include="Resources\TrayApps.png" />
     <None Include="Resources\Logo_128_Chrom.png" />
     <None Include="Resources\index.html" />
   </ItemGroup>

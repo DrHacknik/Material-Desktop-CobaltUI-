@@ -118,160 +118,163 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="if_060_Off_183189" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_060_Off_183189.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_settings_bluetooth_326694_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_settings-bluetooth_326694_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_account_circle_326497_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_account-circle_326497_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_ic_battery_charging_full_48px_352052" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_ic_battery_charging_full_48px_352052.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_ic_wifi_lock_48px_352226" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_ic_wifi_lock_48px_352226.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_bluetooth_326516_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_bluetooth_326516_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_ic_battery_alert_48px_352045" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_ic_battery_alert_48px_352045.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_share4_216719" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_share4_216719.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_ic_signal_wifi_off_48px_352130" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_ic_signal_wifi_off_48px_352130.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TrayApps" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TrapApps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_ic_signal_wifi_4_bar_48px_352129_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_ic_signal_wifi_4_bar_48px_352129_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_settings_bluetooth_326694" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_settings-bluetooth_326694.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_bluetooth_disabled_326507" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_bluetooth-disabled_326507.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_bluetooth_searching_326512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_bluetooth-searching_326512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_ic_battery_90_48px_352044" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_ic_battery_90_48px_352044.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_ic_battery_charging_full_48px_352052_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_ic_battery_charging_full_48px_352052_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_47_111099" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_47_111099.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_ic_signal_wifi_4_bar_48px_352129" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_ic_signal_wifi_4_bar_48px_352129.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_ic_network_wifi_48px_352564" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_ic_network_wifi_48px_352564.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_icon_bluetooth_211632" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_icon-bluetooth_211632.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_bluetooth_disabled_326507_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_bluetooth-disabled_326507_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_98_111048" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_98_111048.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_bluetooth_connected_326502_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_bluetooth-connected_326502_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_ic_wifi_lock_48px_352226_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_ic_wifi_lock_48px_352226_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_ic_battery_std_48px_352053" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_ic_battery_std_48px_352053.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_ic_battery_alert_48px_352045_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_ic_battery_alert_48px_352045_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_share4_216719_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_share4_216719_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_account_circle_326497" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_account-circle_326497.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_ic_signal_wifi_1_bar_48px_352128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_ic_signal_wifi_1_bar_48px_352128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_060_Off_183189_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_060_Off_183189_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_ic_battery_std_48px_352053_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_ic_battery_std_48px_352053_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_bluetooth_connected_326502" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_bluetooth-connected_326502.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_icon_bluetooth_211632_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_icon-bluetooth_211632_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_lock__private__privacy__protection_2538743" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_lock__private__privacy__protection_2538743.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_bluetooth_326516" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_bluetooth_326516.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_ic_signal_wifi_1_bar_48px_352128_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_ic_signal_wifi_1_bar_48px_352128_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_bluetooth_searching_326512_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_bluetooth-searching_326512_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TraySel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TraySel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_ic_battery_90_48px_352044_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_ic_battery_90_48px_352044_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_98_111048_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_98_111048_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_47_111099_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_47_111099_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_lock__private__privacy__protection_2538743_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_lock__private__privacy__protection_2538743_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_ic_signal_wifi_off_48px_352130_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_ic_signal_wifi_off_48px_352130_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TrayPanelAudio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TrayPanelAudio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Concept_Wall_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Concept_Wall_1920.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_060_Off_183189_White_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_060_Off_183189_White_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_account_circle_326497_White_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_account-circle_326497_White_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TrayAppsInactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TrapAppsInactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TrayPanelNotif" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TrayPanelNotif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TrayPanelNotifSel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TrayPanelNotifSel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="index" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\index.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
+  <data name="Concept_Wall_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\Concept_Wall_1920.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_060_Off_183189" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_060_Off_183189.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_060_Off_183189_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_060_Off_183189_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_060_Off_183189_White_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_060_Off_183189_White_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_47_111099" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_47_111099.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_47_111099_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_47_111099_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_98_111048" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_98_111048.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_98_111048_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_98_111048_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_account_circle_326497" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_account-circle_326497.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_account_circle_326497_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_account-circle_326497_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_account_circle_326497_White_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_account-circle_326497_White_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_bluetooth_326516" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_bluetooth_326516.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_bluetooth_326516_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_bluetooth_326516_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_bluetooth_connected_326502" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_bluetooth-connected_326502.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_bluetooth_connected_326502_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_bluetooth-connected_326502_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_bluetooth_disabled_326507" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_bluetooth-disabled_326507.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_bluetooth_disabled_326507_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_bluetooth-disabled_326507_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_bluetooth_searching_326512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_bluetooth-searching_326512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_bluetooth_searching_326512_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_bluetooth-searching_326512_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_icon_bluetooth_211632" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_icon-bluetooth_211632.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_icon_bluetooth_211632_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_icon-bluetooth_211632_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_ic_battery_90_48px_352044" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_ic_battery_90_48px_352044.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_ic_battery_90_48px_352044_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_ic_battery_90_48px_352044_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_ic_battery_alert_48px_352045" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_ic_battery_alert_48px_352045.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_ic_battery_alert_48px_352045_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_ic_battery_alert_48px_352045_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_ic_battery_charging_full_48px_352052" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_ic_battery_charging_full_48px_352052.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_ic_battery_charging_full_48px_352052_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_ic_battery_charging_full_48px_352052_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_ic_battery_std_48px_352053" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_ic_battery_std_48px_352053.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_ic_battery_std_48px_352053_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_ic_battery_std_48px_352053_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_ic_network_wifi_48px_352564" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_ic_network_wifi_48px_352564.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_ic_signal_wifi_1_bar_48px_352128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_ic_signal_wifi_1_bar_48px_352128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_ic_signal_wifi_1_bar_48px_352128_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_ic_signal_wifi_1_bar_48px_352128_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_ic_signal_wifi_4_bar_48px_352129" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_ic_signal_wifi_4_bar_48px_352129.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_ic_signal_wifi_4_bar_48px_352129_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_ic_signal_wifi_4_bar_48px_352129_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_ic_signal_wifi_off_48px_352130" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_ic_signal_wifi_off_48px_352130.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_ic_signal_wifi_off_48px_352130_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_ic_signal_wifi_off_48px_352130_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_ic_wifi_lock_48px_352226" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_ic_wifi_lock_48px_352226.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_ic_wifi_lock_48px_352226_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_ic_wifi_lock_48px_352226_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_lock__private__privacy__protection_2538743" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_lock__private__privacy__protection_2538743.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_lock__private__privacy__protection_2538743_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_lock__private__privacy__protection_2538743_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_settings_bluetooth_326694" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_settings-bluetooth_326694.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_settings_bluetooth_326694_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_settings-bluetooth_326694_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_share4_216719" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_share4_216719.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_share4_216719_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\if_share4_216719_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Logo_128_Chrom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo_128_Chrom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources_New\Logo_128_Chrom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrapApps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\TrapApps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrayApps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\TrayApps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrayAppsInactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\TrayAppsInactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrayPanelAudio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\TrayPanelAudio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrayPanelNotif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\TrayPanelNotif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrayPanelNotifSel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\TrayPanelNotifSel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TraySel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources_New\TraySel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

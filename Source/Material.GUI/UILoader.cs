@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Material_Design_Desktop_Concept.Material.Modules;
 
 namespace Material_Design_Desktop_Concept.Material.GUI
 {
@@ -47,9 +48,7 @@ namespace Material_Design_Desktop_Concept.Material.GUI
                         File.Copy(Properties.Settings.Default.TmpWallPath, cd + "\\Common\\User\\Wallpapers\\_current.png", true);
                     }
                 }
-                catch
-                {
-                }
+                catch { }
                 return;
             }
 

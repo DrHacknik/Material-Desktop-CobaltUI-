@@ -63,11 +63,12 @@
             this.falseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uIModulesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.webViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wallpaperToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.weatherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uIModulesManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uISettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uIExitSafeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.UIAboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.wallpaperToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpDialogWall = new System.Windows.Forms.OpenFileDialog();
             this.PnlTray.SuspendLayout();
             this.PnlSelected.SuspendLayout();
@@ -133,7 +134,6 @@
             // PcxBlue
             // 
             this.PcxBlue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.PcxBlue.BackgroundImage = global::Material_Design_Desktop_Concept.Properties.Resources.if_47_111099_White;
             this.PcxBlue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PcxBlue.InitialImage = ((System.Drawing.Image)(resources.GetObject("PcxBlue.InitialImage")));
             this.PcxBlue.Location = new System.Drawing.Point(56, 7);
@@ -198,7 +198,7 @@
             // 
             this.PcxApps.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.PcxApps.BackgroundImage = global::Material_Design_Desktop_Concept.Properties.Resources.TrayApps;
+            this.PcxApps.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxApps.BackgroundImage")));
             this.PcxApps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PcxApps.InitialImage = ((System.Drawing.Image)(resources.GetObject("PcxApps.InitialImage")));
             this.PcxApps.Location = new System.Drawing.Point(16, 10);
@@ -243,7 +243,6 @@
             // 
             this.PnlTrayPanelPowerIcon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PnlTrayPanelPowerIcon.BackgroundImage = global::Material_Design_Desktop_Concept.Properties.Resources.if_060_Off_183189_White;
             this.PnlTrayPanelPowerIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PnlTrayPanelPowerIcon.InitialImage = ((System.Drawing.Image)(resources.GetObject("PnlTrayPanelPowerIcon.InitialImage")));
             this.PnlTrayPanelPowerIcon.Location = new System.Drawing.Point(195, 197);
@@ -257,7 +256,6 @@
             // 
             // PnlTrayPaneAudio
             // 
-            this.PnlTrayPaneAudio.BackgroundImage = global::Material_Design_Desktop_Concept.Properties.Resources.TrayPanelAudio;
             this.PnlTrayPaneAudio.Controls.Add(this.PcxTrayPaneAudioForm);
             this.PnlTrayPaneAudio.Location = new System.Drawing.Point(49, 164);
             this.PnlTrayPaneAudio.Name = "PnlTrayPaneAudio";
@@ -279,7 +277,6 @@
             // PnlTrayPaneAudioIcon
             // 
             this.PnlTrayPaneAudioIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.PnlTrayPaneAudioIcon.BackgroundImage = global::Material_Design_Desktop_Concept.Properties.Resources.if_47_111099_White;
             this.PnlTrayPaneAudioIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PnlTrayPaneAudioIcon.InitialImage = ((System.Drawing.Image)(resources.GetObject("PnlTrayPaneAudioIcon.InitialImage")));
             this.PnlTrayPaneAudioIcon.Location = new System.Drawing.Point(16, 158);
@@ -417,7 +414,7 @@
             // PnlPanelNotifIcon
             // 
             this.PnlPanelNotifIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.PnlPanelNotifIcon.BackgroundImage = global::Material_Design_Desktop_Concept.Properties.Resources.if_share4_216719_White;
+            this.PnlPanelNotifIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PnlPanelNotifIcon.BackgroundImage")));
             this.PnlPanelNotifIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PnlPanelNotifIcon.InitialImage = ((System.Drawing.Image)(resources.GetObject("PnlPanelNotifIcon.InitialImage")));
             this.PnlPanelNotifIcon.Location = new System.Drawing.Point(16, 13);
@@ -484,7 +481,8 @@
             // 
             this.uIModulesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.webViewToolStripMenuItem,
-            this.wallpaperToolStripMenuItem});
+            this.wallpaperToolStripMenuItem,
+            this.weatherToolStripMenuItem});
             this.uIModulesToolStripMenuItem.Name = "uIModulesToolStripMenuItem";
             this.uIModulesToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.uIModulesToolStripMenuItem.Text = "UIModules";
@@ -495,6 +493,20 @@
             this.webViewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.webViewToolStripMenuItem.Text = "WebView";
             this.webViewToolStripMenuItem.Click += new System.EventHandler(this.WebViewToolStripMenuItem_Click);
+            // 
+            // wallpaperToolStripMenuItem
+            // 
+            this.wallpaperToolStripMenuItem.Name = "wallpaperToolStripMenuItem";
+            this.wallpaperToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.wallpaperToolStripMenuItem.Text = "Wallpaper";
+            this.wallpaperToolStripMenuItem.Click += new System.EventHandler(this.wallpaperToolStripMenuItem_Click);
+            // 
+            // weatherToolStripMenuItem
+            // 
+            this.weatherToolStripMenuItem.Name = "weatherToolStripMenuItem";
+            this.weatherToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.weatherToolStripMenuItem.Text = "Weather";
+            this.weatherToolStripMenuItem.Click += new System.EventHandler(this.weatherToolStripMenuItem_Click);
             // 
             // uIModulesManagementToolStripMenuItem
             // 
@@ -523,13 +535,6 @@
             this.UIAboutToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.UIAboutToolStripMenuItem.Text = "UIAbout";
             this.UIAboutToolStripMenuItem.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
-            // wallpaperToolStripMenuItem
-            // 
-            this.wallpaperToolStripMenuItem.Name = "wallpaperToolStripMenuItem";
-            this.wallpaperToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.wallpaperToolStripMenuItem.Text = "Wallpaper";
-            this.wallpaperToolStripMenuItem.Click += new System.EventHandler(this.wallpaperToolStripMenuItem_Click);
             // 
             // OpDialogWall
             // 
@@ -631,5 +636,6 @@
         private System.Windows.Forms.ToolStripMenuItem webViewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem wallpaperToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog OpDialogWall;
+        private System.Windows.Forms.ToolStripMenuItem weatherToolStripMenuItem;
     }
 }

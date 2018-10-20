@@ -1,4 +1,6 @@
-﻿using MaterialSkin;
+﻿using System;
+using Material_Design_Desktop_Concept.Material.Modules;
+using MaterialSkin;
 using MaterialSkin.Controls;
 
 namespace Material_Design_Desktop_Concept.Material.GUI
@@ -9,6 +11,11 @@ namespace Material_Design_Desktop_Concept.Material.GUI
         {
             MaterialSkinManager.Instance.AddFormToManage(this);
             InitializeComponent();
+        }
+
+        private void BtnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

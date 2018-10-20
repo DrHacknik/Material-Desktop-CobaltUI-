@@ -1,0 +1,51 @@
+{ 
+	"Language": "English",
+	"Region": "Null",
+	"WebView-version": "Null",
+	"Default": {
+		"Username": "Null", 
+		"Password": "Null",
+		"Allow-root": "False",
+		"Install-default-modules": "True", 
+		"Fetch-updates": "True", 
+		"WebView": {
+			"Default-OATH": "https://accounts.google.com/AddSession/signinchooser",
+			"Allow-ext-WebView": "False",
+			"Allow-initial-login": "True"
+		}
+	},
+	"Modules-install": {
+		"Module-base": "https://github.com/DrHacknik/cobalt_packages/blob/master/packages.json?raw=true",
+		"UIClock": {
+			"ModuleName": "Clock",
+			"ModuleID": "dev.material.clock",
+			"ModuleArch": "x86_64",
+			"ModuleType": "Web-based"
+		},
+		"UICalendar": {
+			"ModuleName": "Calendar",
+			"ModuleID": "dev.material.calendar",
+			"ModuleArch": "x86_64",
+			"ModuleType": "Web-based"
+		},
+		"UISpotify": {
+			"ModuleName": "Spotify",
+			"ModuleID": "dev.drhacknik.openspotify",
+			"ModuleArch": "x86_64",
+			"ModuleType": "Web-based"
+		},
+		"UIEvernote": {
+			"ModuleName": "Evernote",
+			"ModuleID": "dev.drhacknik.openevernote",
+			"ModuleArch": "x86_64",
+			"ModuleType": "Web-based"
+		},
+		"UIChromium": {
+			"ModuleName": "Chromium",
+			"ModuleID": "dev.drhacknik.chromium",
+			"ModuleArch": "x86_64",
+			"ModuleType": "Independant"
+		},
+		"Run-cleanup": "True" 
+	}
+}

@@ -1,27 +1,27 @@
-﻿using MaterialSkin;
-using MaterialSkin.Controls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CefSharp;
 using CefSharp.WinForms;
 using Material_Design_Desktop_Concept.Material.GUI;
-using System.IO;
-using System.Reflection;
-using System.Net;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace Material_Design_Desktop_Concept.Material.Web
 {
     public partial class UIWebView : MaterialForm
     {
         public string WebViewURL;
-        private string cd = Application.StartupPath;
+        private string cd = Environment.CurrentDirectory;
         public const string WebViewDefURL = "https://accounts.google.com/AddSession/signinchooser";
         private const string WebViewTabDefURL = "https://accounts.google.com/AddSession/signinchooser";
         public bool Movable = false;
@@ -30,7 +30,11 @@ namespace Material_Design_Desktop_Concept.Material.Web
 
         public UIWebView()
         {
-            WebViewURL = Properties.Settings.Default.TmpURL;
+            if (Properties.Settings.Default.TmpURL != null)
+            {
+                WebViewURL = Properties.Settings.Default.TmpURL;
+            }
+
             InitializeChromium();
             MaterialSkinManager.Instance.AddFormToManage(this);
             InitializeComponent();
@@ -46,7 +50,7 @@ namespace Material_Design_Desktop_Concept.Material.Web
                     .Browser
                     .MainFrame
                     .ExecuteJavaScriptAsync(
-                    "document.body.style.overflow = 'hidden'");
+                        "document.body.style.overflow = 'hidden'");
             }
         }
 

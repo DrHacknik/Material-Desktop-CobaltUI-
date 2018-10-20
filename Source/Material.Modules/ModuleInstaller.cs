@@ -1,23 +1,23 @@
-﻿using Material_Design_Desktop_Concept.Material.Web;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Material_Design_Desktop_Concept.Material.Web;
 
 namespace Material_Design_Desktop_Concept.Material.Modules
 {
     internal class ModuleInstaller
     {
-        private string cd = Application.StartupPath;
-        public string installPath;
-        public string Module;
-        public string ModuleID;
-        public bool RequireWebView = false;
+        private static string cd = Application.StartupPath;
+        public static string installPath;
+        public static string Module;
+        public static string ModuleID;
+        public static bool RequireWebView = false;
         private string WebViewURL = Properties.Settings.Default.TmpURL;
-        public string WebViewOATH;
+        public static string WebViewOATH;
 
         public void InstallModule()
         {
@@ -34,9 +34,7 @@ namespace Material_Design_Desktop_Concept.Material.Modules
                 _UIWebView.Show();
                 return;
             }
-            else
-            {
-            }
+            else { }
         }
 
         public void RemoveModule()

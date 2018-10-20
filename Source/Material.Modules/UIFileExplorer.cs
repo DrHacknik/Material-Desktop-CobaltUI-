@@ -8,13 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Material_Design_Desktop_Concept.Material.Modules
-{
-    public partial class UIFileExplorer : Form
-    {
-        public UIFileExplorer()
-        {
-            InitializeComponent();
+namespace Material_Design_Desktop_Concept.Material.Modules {
+    public partial class UIFileExplorer : Form {
+        public UIFileExplorer () {
+            InitializeComponent ();
         }
     }
 }

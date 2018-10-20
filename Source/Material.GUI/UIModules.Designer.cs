@@ -29,16 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UIModules));
+            this.LblModuleList = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // LblModuleList
+            // 
+            this.LblModuleList.BackColor = System.Drawing.Color.Transparent;
+            this.LblModuleList.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.LblModuleList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblModuleList.ForeColor = System.Drawing.Color.White;
+            this.LblModuleList.Location = new System.Drawing.Point(0, 64);
+            this.LblModuleList.Name = "LblModuleList";
+            this.LblModuleList.Size = new System.Drawing.Size(800, 386);
+            this.LblModuleList.TabIndex = 0;
+            this.LblModuleList.Text = "NULL";
             // 
             // UIModules
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.LblModuleList);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -48,10 +60,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UIModules";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.UIModules_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label LblModuleList;
     }
 }

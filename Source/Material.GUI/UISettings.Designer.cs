@@ -1,7 +1,5 @@
-﻿namespace Material_Design_Desktop_Concept.Material.GUI
-{
-    partial class UISettings
-    {
+﻿namespace Material_Design_Desktop_Concept.Material.GUI {
+    partial class UISettings {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -11,13 +9,11 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
+        protected override void Dispose (bool disposing) {
+            if (disposing && (components != null)) {
+                components.Dispose ();
             }
-            base.Dispose(disposing);
+            base.Dispose (disposing);
         }
 
         #region Windows Form Designer generated code
@@ -26,8 +22,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
+        private void InitializeComponent () {
             this.BtnAccept = new MaterialSkin.Controls.MaterialRaisedButton();
             this.BtnApply = new MaterialSkin.Controls.MaterialRaisedButton();
             this.BtnCancel = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -80,6 +75,7 @@
             this.BtnCancel.TabIndex = 2;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = true;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // UISettings
             // 

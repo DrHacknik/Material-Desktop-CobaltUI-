@@ -11,6 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Material_Design_Desktop_Concept.Material.Web;
+using Material_Design_Desktop_Concept.Material.Modules;
 
 namespace Material_Design_Desktop_Concept.Material.GUI
 {
@@ -67,20 +68,19 @@ namespace Material_Design_Desktop_Concept.Material.GUI
             {
                 var process = new Process
                 {
-                    StartInfo =
-                          {
-                              FileName = "netsh.exe",
-                              Arguments = "wlan show interfaces",
-                              UseShellExecute = false,
-                              RedirectStandardOutput = true,
-                              CreateNoWindow = true
-                          }
+                    StartInfo = {
+                    FileName = "netsh.exe",
+                    Arguments = "wlan show interfaces",
+                    UseShellExecute = false,
+                    RedirectStandardOutput = true,
+                    CreateNoWindow = true
+                    }
                 };
                 process.Start();
 
                 var output = process.StandardOutput.ReadToEnd();
                 var line = output.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries)
-                                 .FirstOrDefault(l => l.Contains("SSID") && !l.Contains("BSSID"));
+                    .FirstOrDefault(l => l.Contains("SSID") && !l.Contains("BSSID"));
                 if (line == null)
                 {
                     LblTrayPanelSSID.Text = "";
@@ -91,7 +91,7 @@ namespace Material_Design_Desktop_Concept.Material.GUI
                 this.PcxWireless.BackgroundImage = Properties.Resources.if_ic_signal_wifi_1_bar_48px_352128_White;
                 this.PnlTrayPanelWifiIcon.BackgroundImage = Properties.Resources.if_ic_signal_wifi_1_bar_48px_352128_White;
             }
-            catch
+            catch (Exception ex)
             {
                 this.LblTrayPanelSSID.Text = "Wifi Disabled";
                 this.PcxWireless.BackgroundImage = Properties.Resources.if_ic_signal_wifi_off_48px_352130_White;
@@ -194,9 +194,18 @@ namespace Material_Design_Desktop_Concept.Material.GUI
         {
             PnlTrayPanelUserIcon.BackgroundImage = Properties.Resources.if_account_circle_326497_White_Sel;
             HideTrayPanel();
-            Form _UISettings = new UISettings();
-            _UISettings.Show();
-            return;
+
+            try
+            {
+                Form _UISettings = new UISettings();
+                _UISettings.Show();
+                return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unable to dispose object." + Environment.NewLine + Environment.NewLine + ex, "UIWeather: Overall error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
         }
 
         private void PnlTrayPanelUserIcon_MouseHover(object sender, EventArgs e)
@@ -237,33 +246,64 @@ namespace Material_Design_Desktop_Concept.Material.GUI
 
         private void uISettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form _UISettings = new UISettings();
-            _UISettings.Show();
-            return;
+            try
+            {
+                Form _UISettings = new UISettings();
+                _UISettings.Show();
+                return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unable to dispose object." + Environment.NewLine + Environment.NewLine + ex, "UIWeather: Overall error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
         }
 
         private void uIModulesManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form _UIModules = new UIModules();
-            _UIModules.Show();
-            return;
+            try
+            {
+                Form _UIModules = new UIModules();
+                _UIModules.Show();
+                return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unable to dispose object." + Environment.NewLine + Environment.NewLine + ex, "UIWeather: Overall error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Form _UIAbout = new UIAbout();
-            _UIAbout.Show();
-            return;
+            try
+            {
+                Form _UIAbout = new UIAbout();
+                _UIAbout.Show();
+                return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unable to dispose object." + Environment.NewLine + Environment.NewLine + ex, "UIWeather: Overall error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
         }
 
         private void WebViewToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form _UIWebView = new UIWebView();
-            _UIWebView.Show();
-
-            Properties.Settings.Default.TmpURL = "file:///" + cd + "/Common/AppData/web_cache/NoData/index.html";
-            Properties.Settings.Default.Save();
-            return;
+            try
+            {
+                Form _UIWebView = new UIWebView();
+                _UIWebView.Show();
+                Properties.Settings.Default.TmpURL = "file:///" + cd + "/Common/AppData/web_cache/NoData/index.html";
+                Properties.Settings.Default.Save();
+                return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unable to dispose object." + Environment.NewLine + Environment.NewLine + ex, "UIWeather: Overall error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
         }
 
         private void wallpaperToolStripMenuItem_Click(object sender, EventArgs e)
@@ -288,8 +328,21 @@ namespace Material_Design_Desktop_Concept.Material.GUI
                     File.Copy(Properties.Settings.Default.TmpWallPath, cd + "\\Common\\User\\Wallpapers\\_current.png", true);
                 }
             }
-            catch
+            catch (Exception ex) { }
+        }
+
+        private void weatherToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
             {
+                Form _UIWeather = new UIWeather();
+                _UIWeather.Show();
+                return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unable to dispose object." + Environment.NewLine + Environment.NewLine + ex, "UIWeather: Overall error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
         }
     }

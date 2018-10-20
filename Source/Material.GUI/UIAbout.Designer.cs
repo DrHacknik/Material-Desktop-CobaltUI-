@@ -40,12 +40,12 @@
             // 
             this.LblHeader.BackColor = System.Drawing.Color.Transparent;
             this.LblHeader.Depth = 0;
-            this.LblHeader.Font = new System.Drawing.Font("Roboto", 14F);
+            this.LblHeader.Font = new System.Drawing.Font("Roboto", 11F);
             this.LblHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.LblHeader.Location = new System.Drawing.Point(130, 88);
             this.LblHeader.MouseState = MaterialSkin.MouseState.HOVER;
             this.LblHeader.Name = "LblHeader";
-            this.LblHeader.Size = new System.Drawing.Size(306, 27);
+            this.LblHeader.Size = new System.Drawing.Size(306, 53);
             this.LblHeader.TabIndex = 1;
             this.LblHeader.Text = "%HEADER%";
             // 
@@ -55,7 +55,7 @@
             this.LblBody.Depth = 0;
             this.LblBody.Font = new System.Drawing.Font("Roboto", 11F);
             this.LblBody.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblBody.Location = new System.Drawing.Point(130, 115);
+            this.LblBody.Location = new System.Drawing.Point(130, 141);
             this.LblBody.MouseState = MaterialSkin.MouseState.HOVER;
             this.LblBody.Name = "LblBody";
             this.LblBody.Size = new System.Drawing.Size(306, 85);
@@ -90,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(448, 412);
+            this.ClientSize = new System.Drawing.Size(448, 486);
             this.Controls.Add(this.LblFullBody);
             this.Controls.Add(this.LblBody);
             this.Controls.Add(this.LblHeader);

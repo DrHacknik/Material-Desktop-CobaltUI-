@@ -1,5 +1,4 @@
-﻿using Material_Design_Desktop_Concept.Material.Web;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Material_Design_Desktop_Concept.Material.Web;
 
 namespace Material_Design_Desktop_Concept.Material.GUI
 {
@@ -57,9 +57,7 @@ namespace Material_Design_Desktop_Concept.Material.GUI
                     {
                         File.Copy(Properties.Settings.Default.TmpWallPath, cd + "\\Common\\User\\Wallpapers\\_current.png", true);
                     }
-                    catch
-                    {
-                    }
+                    catch { }
                     this.BackgroundImage = Image.FromFile(cd + "\\Common\\User\\Wallpapers\\_current.png");
                     return;
                 }
