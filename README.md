@@ -18,3 +18,6 @@ This environment uses the following libraries:
 [![SCEEN](https://github.com/DrHacknik/Material-Desktop-CobaltUI-/blob/master/Common/Images/Screens/Screenshot%20(10)_THUMB.png?raw=true)](https://github.com/DrHacknik/Material-Desktop-CobaltUI-/blob/master/Common/Images/Screens/Screenshot%20(10).png?raw=true)
 
 [![SCEEN](https://github.com/DrHacknik/Material-Desktop-CobaltUI-/blob/master/Common/Images/Screens/Screenshot%20(11)_THUMB.png?raw=true)](https://github.com/DrHacknik/Material-Desktop-CobaltUI-/blob/master/Common/Images/Screens/Screenshot%20(11).png?raw=true)
+
+[AppVeyor Builds](https://ci.appveyor.com/project/zoltx23/material-desktop-cobaltui)
+<br>*Do keep in mind these builds do not have the required resources.*
