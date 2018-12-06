@@ -345,5 +345,14 @@ namespace Material_Design_Desktop_Concept.Material.GUI
                 return;
             }
         }
+
+        private void notificationSystemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form FmNotif = new UINotification();
+            FmNotif.Show();
+            ((Label)FmNotif.Controls["LblHeader"]).Text = "Test";
+            ((Label)FmNotif.Controls["LblBody"]).Text = "Test Notification";
+            return;
+        }
     }
 }

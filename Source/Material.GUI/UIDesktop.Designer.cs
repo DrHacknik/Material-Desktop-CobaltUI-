@@ -70,6 +70,7 @@
             this.uIExitSafeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.UIAboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpDialogWall = new System.Windows.Forms.OpenFileDialog();
+            this.notificationSystemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlTray.SuspendLayout();
             this.PnlSelected.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcxUser)).BeginInit();
@@ -449,7 +450,7 @@
             this.UIAboutToolStripMenuItem});
             this.CtxUI.MouseState = MaterialSkin.MouseState.HOVER;
             this.CtxUI.Name = "CtxUI";
-            this.CtxUI.Size = new System.Drawing.Size(208, 136);
+            this.CtxUI.Size = new System.Drawing.Size(208, 158);
             // 
             // uIDisableWirelessContextToolStripMenuItem
             // 
@@ -482,7 +483,8 @@
             this.uIModulesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.webViewToolStripMenuItem,
             this.wallpaperToolStripMenuItem,
-            this.weatherToolStripMenuItem});
+            this.weatherToolStripMenuItem,
+            this.notificationSystemToolStripMenuItem});
             this.uIModulesToolStripMenuItem.Name = "uIModulesToolStripMenuItem";
             this.uIModulesToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.uIModulesToolStripMenuItem.Text = "UIModules";
@@ -542,6 +544,13 @@
             this.OpDialogWall.Filter = "PNG|*.png|JPEG|*.jpeg|JPG|*.jpg|BMP|*.bmp|Any File (Can Cause Issues)|*.";
             this.OpDialogWall.Title = "Select Wallpaper";
             this.OpDialogWall.FileOk += new System.ComponentModel.CancelEventHandler(this.OpDialogWall_FileOk);
+            // 
+            // notificationSystemToolStripMenuItem
+            // 
+            this.notificationSystemToolStripMenuItem.Name = "notificationSystemToolStripMenuItem";
+            this.notificationSystemToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.notificationSystemToolStripMenuItem.Text = "Notification System";
+            this.notificationSystemToolStripMenuItem.Click += new System.EventHandler(this.notificationSystemToolStripMenuItem_Click);
             // 
             // UIDesktop
             // 
@@ -637,5 +646,6 @@
         private System.Windows.Forms.ToolStripMenuItem wallpaperToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog OpDialogWall;
         private System.Windows.Forms.ToolStripMenuItem weatherToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem notificationSystemToolStripMenuItem;
     }
 }
