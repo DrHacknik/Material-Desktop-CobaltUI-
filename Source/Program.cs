@@ -22,7 +22,15 @@ namespace Material_Design_Desktop_Concept
             skinmgr.ColorScheme = new ColorScheme(Primary.Blue800, Primary.Blue900, Primary.Blue500, Accent.Blue200, TextShade.WHITE);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UILogin());
+
+            if (Properties.Settings.Default.IsSetup == "0")
+            {
+                Application.Run(new UIPrereq());
+            }
+            else if (Properties.Settings.Default.IsSetup == "1")
+            {
+                Application.Run(new UILogin());
+            }
         }
     }
 }

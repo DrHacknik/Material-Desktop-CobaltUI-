@@ -254,7 +254,7 @@ namespace Material_Design_Desktop_Concept.Material.GUI
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Unable to dispose object." + Environment.NewLine + Environment.NewLine + ex, "UIWeather: Overall error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Unable to dispose object." + Environment.NewLine + Environment.NewLine + ex, "UISettings: Overall error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
         }
@@ -269,7 +269,7 @@ namespace Material_Design_Desktop_Concept.Material.GUI
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Unable to dispose object." + Environment.NewLine + Environment.NewLine + ex, "UIWeather: Overall error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Unable to dispose object." + Environment.NewLine + Environment.NewLine + ex, "UIModuleManagement: Overall error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
         }
@@ -284,7 +284,7 @@ namespace Material_Design_Desktop_Concept.Material.GUI
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Unable to dispose object." + Environment.NewLine + Environment.NewLine + ex, "UIWeather: Overall error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Unable to dispose object." + Environment.NewLine + Environment.NewLine + ex, "UIAbout: Overall error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
         }
@@ -294,14 +294,17 @@ namespace Material_Design_Desktop_Concept.Material.GUI
             try
             {
                 Form _UIWebView = new UIWebView();
-                _UIWebView.Show();
-                Properties.Settings.Default.TmpURL = "file:///" + cd + "/Common/AppData/web_cache/NoData/index.html";
+                UIWebView.WebViewLoginGoogle = false;
+                Properties.Settings.Default.TmpURL = "https://google.com";
                 Properties.Settings.Default.Save();
+                _UIWebView.Size = new Size(1280, 768);
+                UIWebView.IntHeight = 768;
+                _UIWebView.Show();
                 return;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Unable to dispose object." + Environment.NewLine + Environment.NewLine + ex, "UIWeather: Overall error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Unable to dispose object." + Environment.NewLine + Environment.NewLine + ex, "UIWebView: Overall error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
         }

@@ -96,13 +96,12 @@ namespace Material_Design_Desktop_Concept.Material.GUI
             this.TopMost = false;
             PcxUser.Visible = false;
             LblUserPass.Visible = false;
-
+            LblGoogle.Visible = false;
             Form _UIWebView = new UIWebView();
             _UIWebView.Show();
             _UIWebView.ControlBox = false;
 
-            Properties.Settings.Default.TmpURL = "https://accounts.google.com/AddSession/signinchooser";
-            Properties.Settings.Default.Save();
+            UIWebView.WebViewLoginGoogle = true;
             return;
         }
     }

@@ -24,8 +24,9 @@ namespace Material_Design_Desktop_Concept.Material.Web
         private string cd = Environment.CurrentDirectory;
         public const string WebViewDefURL = "https://accounts.google.com/AddSession/signinchooser";
         private const string WebViewTabDefURL = "https://accounts.google.com/AddSession/signinchooser";
+        public static bool WebViewLoginGoogle;
         public bool Movable = false;
-
+        public static int IntHeight;
         private const double ZoomIncrement = 0.10;
 
         public UIWebView()
@@ -42,7 +43,7 @@ namespace Material_Design_Desktop_Concept.Material.Web
 
         public ChromiumWebBrowser WebViewBroser;
 
-        private void HideScrollbars(object sender, FrameLoadEndEventArgs args)
+        public static void HideScrollbars(object sender, FrameLoadEndEventArgs args)
         {
             if (args.Frame.IsMain)
             {
@@ -61,7 +62,15 @@ namespace Material_Design_Desktop_Concept.Material.Web
 
             settings.CachePath = cd + "\\Common\\AppData\\web_cache";
             Cef.Initialize(settings);
-            WebViewBroser = new ChromiumWebBrowser(Properties.Settings.Default.TmpURL);
+
+            if (WebViewLoginGoogle == true)
+            {
+                WebViewBroser = new ChromiumWebBrowser(WebViewDefURL);
+            }
+            else if (WebViewLoginGoogle == false)
+            {
+                WebViewBroser = new ChromiumWebBrowser(Properties.Settings.Default.TmpURL);
+            }
 
             WebViewBroser.FrameLoadEnd += HideScrollbars;
             this.Controls.Add(WebViewBroser);
@@ -103,7 +112,7 @@ namespace Material_Design_Desktop_Concept.Material.Web
         private void UIWebView_Load(object sender, EventArgs e)
         {
             WebViewBroser.Dock = DockStyle.Bottom;
-            WebViewBroser.Height = 475;
+            WebViewBroser.Height = IntHeight - 66;
             return;
         }
 
