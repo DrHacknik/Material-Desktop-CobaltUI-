@@ -338,8 +338,13 @@ namespace Material_Design_Desktop_Concept.Material.GUI
         {
             try
             {
-                Form _UIWeather = new UIWeather();
-                _UIWeather.Show();
+                Form _UIWebView = new UIWebView();
+                UIWebView.WebViewLoginGoogle = false;
+                Properties.Settings.Default.TmpURL = "https://weather.com";
+                Properties.Settings.Default.Save();
+                _UIWebView.Size = new Size(800, 600);
+                UIWebView.IntHeight = 600;
+                _UIWebView.Show();
                 return;
             }
             catch (Exception ex)

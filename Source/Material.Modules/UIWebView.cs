@@ -67,7 +67,7 @@ namespace Material_Design_Desktop_Concept.Material.Web
             {
                 WebViewBroser = new ChromiumWebBrowser(WebViewDefURL);
             }
-            else if (WebViewLoginGoogle == false)
+            if (WebViewLoginGoogle == false)
             {
                 WebViewBroser = new ChromiumWebBrowser(Properties.Settings.Default.TmpURL);
             }
@@ -119,6 +119,8 @@ namespace Material_Design_Desktop_Concept.Material.Web
         private void UIWebView_FormClosing(object sender, FormClosingEventArgs e)
         {
             Cef.Shutdown();
+            Properties.Settings.Default.TmpURL = "";
+            Properties.Settings.Default.Save();
         }
 
         private void UIWebView_FormClosed(object sender, FormClosedEventArgs e)
