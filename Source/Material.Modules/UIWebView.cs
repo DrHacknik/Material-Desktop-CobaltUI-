@@ -24,6 +24,7 @@ namespace Material_Design_Desktop_Concept.Material.Web
         private string cd = Environment.CurrentDirectory;
         public const string WebViewDefURL = "https://accounts.google.com/AddSession/signinchooser";
         private const string WebViewTabDefURL = "https://accounts.google.com/AddSession/signinchooser";
+        public static string WebViewLoadURL;
         public static bool WebViewLoginGoogle;
         public bool Movable = false;
         public static int IntHeight;
@@ -31,11 +32,6 @@ namespace Material_Design_Desktop_Concept.Material.Web
 
         public UIWebView()
         {
-            if (Properties.Settings.Default.TmpURL != null)
-            {
-                WebViewURL = Properties.Settings.Default.TmpURL;
-            }
-
             InitializeChromium();
             MaterialSkinManager.Instance.AddFormToManage(this);
             InitializeComponent();
@@ -57,17 +53,19 @@ namespace Material_Design_Desktop_Concept.Material.Web
 
         public void InitializeChromium()
         {
+            Properties.Settings.Default.TmpURL = WebViewLoadURL;
+            Properties.Settings.Default.Save();
             CEFCleanup();
-            CefSettings settings = new CefSettings();
+            CefSettings CefSettings = new CefSettings();
 
-            settings.CachePath = cd + "\\Common\\AppData\\web_cache";
-            Cef.Initialize(settings);
+            CefSettings.CachePath = cd + "\\Common\\AppData\\web_cache";
+            Cef.Initialize(CefSettings);
 
             if (WebViewLoginGoogle == true)
             {
                 WebViewBroser = new ChromiumWebBrowser(WebViewDefURL);
             }
-            if (WebViewLoginGoogle == false)
+            else if (WebViewLoginGoogle == false)
             {
                 WebViewBroser = new ChromiumWebBrowser(Properties.Settings.Default.TmpURL);
             }

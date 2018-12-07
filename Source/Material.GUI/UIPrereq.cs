@@ -80,8 +80,6 @@ namespace Material_Design_Desktop_Concept.Material.GUI
                 Directory.Delete(cd + "\\Common\\Temp");
                 return;
             }
-            Properties.Settings.Default.TmpURL = "";
-            Properties.Settings.Default.Save();
             PrgMain.Value = 100;
             TmCompl.Start();
         }

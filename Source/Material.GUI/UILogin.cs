@@ -97,11 +97,11 @@ namespace Material_Design_Desktop_Concept.Material.GUI
             PcxUser.Visible = false;
             LblUserPass.Visible = false;
             LblGoogle.Visible = false;
+            UIWebView.IntHeight = 539;
+            UIWebView.WebViewLoginGoogle = true;
             Form _UIWebView = new UIWebView();
             _UIWebView.Show();
             _UIWebView.ControlBox = false;
-
-            UIWebView.WebViewLoginGoogle = true;
             return;
         }
     }

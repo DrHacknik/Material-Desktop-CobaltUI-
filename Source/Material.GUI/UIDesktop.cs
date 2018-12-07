@@ -295,8 +295,7 @@ namespace Material_Design_Desktop_Concept.Material.GUI
             {
                 Form _UIWebView = new UIWebView();
                 UIWebView.WebViewLoginGoogle = false;
-                Properties.Settings.Default.TmpURL = "https://google.com";
-                Properties.Settings.Default.Save();
+                UIWebView.WebViewLoadURL = "https://google.com";
                 _UIWebView.Size = new Size(1280, 768);
                 UIWebView.IntHeight = 768;
                 _UIWebView.Show();
@@ -340,8 +339,7 @@ namespace Material_Design_Desktop_Concept.Material.GUI
             {
                 Form _UIWebView = new UIWebView();
                 UIWebView.WebViewLoginGoogle = false;
-                Properties.Settings.Default.TmpURL = "https://weather.com";
-                Properties.Settings.Default.Save();
+                UIWebView.WebViewLoadURL = "https://weather.com";
                 _UIWebView.Size = new Size(800, 600);
                 UIWebView.IntHeight = 600;
                 _UIWebView.Show();
