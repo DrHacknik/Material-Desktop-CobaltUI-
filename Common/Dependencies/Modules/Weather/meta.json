@@ -1,0 +1,9 @@
+{
+    "modulename": "Weather",
+    "depdencies": {
+        "webview_data" : "https://github.com/DrHacknik/Material-Desktop-CobaltUI-/tree/canary/common/dependencies/webview/webview_data.zip"
+    },
+    "author" : "Dr.Hacknik",
+    "version": "0.0.1.0",
+    "version_build" : "null"
+}

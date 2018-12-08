@@ -1,0 +1,10 @@
+{
+    "modulename": "WebView",
+    "depdencies": {
+        "webview_data" : "webview_data.zip",
+        "nodata_index" : "index.html"
+    },
+    "author" : "Dr.Hacknik",
+    "version": "0.0.1.2",
+    "version_build" : "v65"
+}
