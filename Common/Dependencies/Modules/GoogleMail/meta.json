@@ -1,0 +1,14 @@
+{
+    "modulename": "GoogleMail",
+    "appicon512" : "icons/icon_512.png", 
+    "appicon256" : "icons/icon_256.png", 
+    "appicon128" : "icons/icon_128.png", 
+    "appicon64" : "icons/icon_64.png", 
+    "appicon32" : "icons/icon_32.png", 
+    "depdencies": {
+        "webview_data" : "https://github.com/DrHacknik/Material-Desktop-CobaltUI-/tree/canary/common/dependencies/webview/webview_data.zip"
+    },
+    "author" : "Dr.Hacknik",
+    "version": "0.0.1.0",
+    "version_build" : "v65"
+}
