@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Material_Design_Desktop_Concept.Material.Modules {
-    public partial class Clock : Form {
-        public Clock () {
+    public partial class UICalculator : Form {
+        public UICalculator () {
             InitializeComponent ();
         }
     }
