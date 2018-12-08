@@ -1,7 +1,6 @@
 ![logo](https://github.com/DrHacknik/Material-Desktop-CobaltUI-/blob/master/Common/Images/Logos/Logo_128.png?raw=true) 
 # Material Desktop Concept (Project CobaltUI)
 [![Build status](https://ci.appveyor.com/api/projects/status/u7ad0k96p3jt27jq?svg=true)](https://ci.appveyor.com/project/zoltx23/material-desktop-cobaltui-5jb63)
-### Current version: 1.0.0.0 | Master
 
 ## Introduction
 
