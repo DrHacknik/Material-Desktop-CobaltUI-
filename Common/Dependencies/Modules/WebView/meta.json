@@ -1,5 +1,10 @@
 {
     "modulename": "WebView",
+    "appicon512" : "icons/icon_512.png", 
+    "appicon256" : "icons/icon_256.png", 
+    "appicon128" : "icons/icon_128.png", 
+    "appicon64" : "icons/icon_64.png", 
+    "appicon32" : "icons/icon_32.png", 
     "depdencies": {
         "webview_data" : "webview_data.zip",
         "nodata_index" : "index.html"
