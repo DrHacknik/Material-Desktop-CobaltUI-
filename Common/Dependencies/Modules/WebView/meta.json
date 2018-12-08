@@ -5,7 +5,7 @@
     "appicon128" : "icons/icon_128.png", 
     "appicon64" : "icons/icon_64.png", 
     "appicon32" : "icons/icon_32.png", 
-    "depdencies": {
+    "depedencies": {
         "webview_data" : "webview_data.zip",
         "nodata_index" : "index.html"
     },
