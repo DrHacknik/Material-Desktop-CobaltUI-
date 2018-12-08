@@ -117,4 +117,136 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PcxLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="PcxLogo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PcxLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 14</value>
+  </data>
+  <data name="PcxLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 75</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PcxLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;PcxLogo.Name" xml:space="preserve">
+    <value>PcxLogo</value>
+  </data>
+  <data name="&gt;&gt;PcxLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PcxLogo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PcxLogo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="LblHeader.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Light, 12.25pt</value>
+  </data>
+  <data name="LblHeader.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 14</value>
+  </data>
+  <data name="LblHeader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 23</value>
+  </data>
+  <data name="LblHeader.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="LblHeader.Text" xml:space="preserve">
+    <value>HEADER</value>
+  </data>
+  <data name="&gt;&gt;LblHeader.Name" xml:space="preserve">
+    <value>LblHeader</value>
+  </data>
+  <data name="&gt;&gt;LblHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblHeader.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblHeader.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LblBody.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Light, 9.25pt</value>
+  </data>
+  <data name="LblBody.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 37</value>
+  </data>
+  <data name="LblBody.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 52</value>
+  </data>
+  <data name="LblBody.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="LblBody.Text" xml:space="preserve">
+    <value>BODY</value>
+  </data>
+  <data name="&gt;&gt;LblBody.Name" xml:space="preserve">
+    <value>LblBody</value>
+  </data>
+  <data name="&gt;&gt;LblBody.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblBody.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblBody.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="TmrFadeIn.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="TmrFadeOut.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>126, 17</value>
+  </metadata>
+  <metadata name="TmrNotify.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>245, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>402, 103</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>Manual</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>UINotification</value>
+  </data>
+  <data name="&gt;&gt;TmrFadeIn.Name" xml:space="preserve">
+    <value>TmrFadeIn</value>
+  </data>
+  <data name="&gt;&gt;TmrFadeIn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TmrFadeOut.Name" xml:space="preserve">
+    <value>TmrFadeOut</value>
+  </data>
+  <data name="&gt;&gt;TmrFadeOut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TmrNotify.Name" xml:space="preserve">
+    <value>TmrNotify</value>
+  </data>
+  <data name="&gt;&gt;TmrNotify.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UINotification</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

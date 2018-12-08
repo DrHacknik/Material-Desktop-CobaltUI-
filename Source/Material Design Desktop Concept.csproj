@@ -106,6 +106,12 @@
     <Compile Include="Material.GUI\UINotification.Designer.cs">
       <DependentUpon>UINotification.cs</DependentUpon>
     </Compile>
+    <Compile Include="Material.GUI\UIPrereq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Material.GUI\UIPrereq.Designer.cs">
+      <DependentUpon>UIPrereq.cs</DependentUpon>
+    </Compile>
     <Compile Include="Material.GUI\UISettings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Material.GUI\UINotification.resx">
       <DependentUpon>UINotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material.GUI\UIPrereq.resx">
+      <DependentUpon>UIPrereq.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Material.GUI\UISettings.resx">
       <DependentUpon>UISettings.cs</DependentUpon>
