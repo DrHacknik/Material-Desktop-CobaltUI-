@@ -118,11 +118,11 @@
     <Compile Include="Material.GUI\UISettings.Designer.cs">
       <DependentUpon>UISettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Material.Modules\Calculator.cs">
+    <Compile Include="Material.Modules\UICalculator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Material.Modules\Calculator.Designer.cs">
-      <DependentUpon>Calculator.cs</DependentUpon>
+    <Compile Include="Material.Modules\UICalculator.Designer.cs">
+      <DependentUpon>UICalculator.cs</DependentUpon>
     </Compile>
     <Compile Include="Material.Modules\Calendar.cs">
       <SubType>Form</SubType>
@@ -130,11 +130,11 @@
     <Compile Include="Material.Modules\Calendar.Designer.cs">
       <DependentUpon>Calendar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Material.Modules\Clock.cs">
+    <Compile Include="Material.Modules\UIClock.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Material.Modules\Clock.Designer.cs">
-      <DependentUpon>Clock.cs</DependentUpon>
+    <Compile Include="Material.Modules\UIClock.Designer.cs">
+      <DependentUpon>UIClock.cs</DependentUpon>
     </Compile>
     <Compile Include="Material.Modules\UIFileExplorer.cs">
       <SubType>Form</SubType>
