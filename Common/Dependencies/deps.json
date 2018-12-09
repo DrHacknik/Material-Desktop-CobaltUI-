@@ -13,7 +13,8 @@
             "Discord" : "",
             "WebView" : "",
             "Weather" : "",
-            "Spotify" : ""
+            "Spotify" : "",
+            "TestModule" : ""
         }
     },
     "config" : "repo.config"
