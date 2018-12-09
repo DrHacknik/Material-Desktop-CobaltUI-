@@ -65,12 +65,13 @@
             this.webViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wallpaperToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.weatherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notificationSystemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uIModulesManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uISettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uIExitSafeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.UIAboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpDialogWall = new System.Windows.Forms.OpenFileDialog();
-            this.notificationSystemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.moduleLoaderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlTray.SuspendLayout();
             this.PnlSelected.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcxUser)).BeginInit();
@@ -484,7 +485,8 @@
             this.webViewToolStripMenuItem,
             this.wallpaperToolStripMenuItem,
             this.weatherToolStripMenuItem,
-            this.notificationSystemToolStripMenuItem});
+            this.notificationSystemToolStripMenuItem,
+            this.moduleLoaderToolStripMenuItem});
             this.uIModulesToolStripMenuItem.Name = "uIModulesToolStripMenuItem";
             this.uIModulesToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.uIModulesToolStripMenuItem.Text = "UIModules";
@@ -509,6 +511,13 @@
             this.weatherToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.weatherToolStripMenuItem.Text = "Weather";
             this.weatherToolStripMenuItem.Click += new System.EventHandler(this.weatherToolStripMenuItem_Click);
+            // 
+            // notificationSystemToolStripMenuItem
+            // 
+            this.notificationSystemToolStripMenuItem.Name = "notificationSystemToolStripMenuItem";
+            this.notificationSystemToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.notificationSystemToolStripMenuItem.Text = "Notification System";
+            this.notificationSystemToolStripMenuItem.Click += new System.EventHandler(this.notificationSystemToolStripMenuItem_Click);
             // 
             // uIModulesManagementToolStripMenuItem
             // 
@@ -545,12 +554,12 @@
             this.OpDialogWall.Title = "Select Wallpaper";
             this.OpDialogWall.FileOk += new System.ComponentModel.CancelEventHandler(this.OpDialogWall_FileOk);
             // 
-            // notificationSystemToolStripMenuItem
+            // moduleLoaderToolStripMenuItem
             // 
-            this.notificationSystemToolStripMenuItem.Name = "notificationSystemToolStripMenuItem";
-            this.notificationSystemToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.notificationSystemToolStripMenuItem.Text = "Notification System";
-            this.notificationSystemToolStripMenuItem.Click += new System.EventHandler(this.notificationSystemToolStripMenuItem_Click);
+            this.moduleLoaderToolStripMenuItem.Name = "moduleLoaderToolStripMenuItem";
+            this.moduleLoaderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.moduleLoaderToolStripMenuItem.Text = "Module Loader";
+            this.moduleLoaderToolStripMenuItem.Click += new System.EventHandler(this.moduleLoaderToolStripMenuItem_Click);
             // 
             // UIDesktop
             // 
@@ -647,5 +656,6 @@
         private System.Windows.Forms.OpenFileDialog OpDialogWall;
         private System.Windows.Forms.ToolStripMenuItem weatherToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem notificationSystemToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem moduleLoaderToolStripMenuItem;
     }
 }

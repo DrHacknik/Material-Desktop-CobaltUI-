@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="Material.Core\AppLoader.cs" />
     <Compile Include="Material.Core\IniParser.cs" />
+    <Compile Include="Material.Core\JsonParser.cs" />
     <Compile Include="Material.Core\ParseConfig.cs" />
     <Compile Include="Material.Core\ParseModules.cs" />
     <Compile Include="Material.GUI\UIAbout.cs">
@@ -93,6 +94,12 @@
     </Compile>
     <Compile Include="Material.GUI\UILogin.Designer.cs">
       <DependentUpon>UILogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material.GUI\UIManualLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Material.GUI\UIManualLoad.Designer.cs">
+      <DependentUpon>UIManualLoad.cs</DependentUpon>
     </Compile>
     <Compile Include="Material.GUI\UIModules.cs">
       <SubType>Form</SubType>
@@ -175,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Material.GUI\UILogin.resx">
       <DependentUpon>UILogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material.GUI\UIManualLoad.resx">
+      <DependentUpon>UIManualLoad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Material.GUI\UIModules.resx">
       <DependentUpon>UIModules.cs</DependentUpon>

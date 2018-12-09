@@ -40,8 +40,8 @@ namespace Material_Design_Desktop_Concept.Material.Core
             if (!Directory.Exists(cd + "\\Common\\Modules\\ModuleInstaller") || !Directory.Exists(cd + "\\Common\\Modules\\WebView"))
             {
                 Directory.CreateDirectory(cd + "\\Common\\Modules\\ModuleInstaller");
-                Directory.CreateDirectory(cd + "\\Common\\Modules\\DevWebView");
-                Directory.CreateDirectory(cd + "\\Common\\Modules\\DevUIFileExplorer");
+                Directory.CreateDirectory(cd + "\\Common\\Modules\\WebView");
+                Directory.CreateDirectory(cd + "\\Common\\Modules\\UIFileExplorer");
 
                 MessageBox.Show("Missing module directories and meta information was created.", "CheckModules", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }

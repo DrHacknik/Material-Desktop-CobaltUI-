@@ -11,6 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Material_Design_Desktop_Concept.Material.Web;
+using Material_Design_Desktop_Concept.Material.Core;
 using Material_Design_Desktop_Concept.Material.Modules;
 
 namespace Material_Design_Desktop_Concept.Material.GUI
@@ -358,6 +359,13 @@ namespace Material_Design_Desktop_Concept.Material.GUI
             FmNotif.Show();
             ((Label)FmNotif.Controls["LblHeader"]).Text = "Test";
             ((Label)FmNotif.Controls["LblBody"]).Text = "Test Notification";
+            return;
+        }
+
+        private void moduleLoaderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form _ModuleLoader = new UIManualLoad();
+            _ModuleLoader.Show();
             return;
         }
     }

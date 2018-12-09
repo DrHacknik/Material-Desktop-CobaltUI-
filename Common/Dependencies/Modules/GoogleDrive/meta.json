@@ -1,5 +1,6 @@
 {
     "modulename": "GoogleDrive",
+    "moduletype": "webview",
     "appicon512" : "icons/icon_512.png", 
     "appicon256" : "icons/icon_256.png", 
     "appicon128" : "icons/icon_128.png", 
