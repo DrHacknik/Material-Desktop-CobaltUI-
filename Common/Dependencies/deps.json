@@ -1,6 +1,6 @@
 { 
     "Default" : { 
-        "url" : "https://github.com/DrHacknik/Material-Desktop-CobaltUI-/tree/canary/Common/Dependencies",
+        "url" : "https://github.com/DrHacknik/Material-Desktop-CobaltUI-/tree/canary/Common/Dependencies/Modules",
         "author" : "Dr.Hacknik",
         "module list" : { 
             "GoogleDocs" : "",
