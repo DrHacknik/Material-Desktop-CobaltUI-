@@ -40,6 +40,7 @@ namespace Material_Design_Desktop_Concept.Material.Web
         public static string WebViewControls;
         public static string WebViewLockscreen;
         public static string WebViewColor;
+        public static string WebViewSizable;
 
         public static string ModuleAllowLockScreenSvc;
         public static string ModuleDesktopSvc;
@@ -76,83 +77,8 @@ namespace Material_Design_Desktop_Concept.Material.Web
             CefSettings.CachePath = cd + "\\Common\\AppData\\web_cache";
             Cef.Initialize(CefSettings);
 
+            WebViewBrowser = new ChromiumWebBrowser(WebViewURL);
             this.Controls.Add(WebViewBrowser);
-
-            if (ModuleIsWebView == true)
-            {
-                if (WebViewScrollBars == "true")
-                {
-                    WebViewBrowser.FrameLoadEnd += HideScrollbars;
-                }
-
-                if (WebViewOath == "true")
-                {
-                    WebViewBrowser = new ChromiumWebBrowser(WebViewDefURL);
-                }
-                else if (WebViewOath == "false")
-                {
-                    WebViewBrowser = new ChromiumWebBrowser(WebViewURL);
-                }
-
-                if (WebViewControls == "full")
-                {
-                    this.ControlBox = true;
-                    this.MaximizeBox = true;
-                    this.MinimizeBox = true;
-                }
-                else if (WebViewControls == "minimal_close")
-                {
-                    this.ControlBox = true;
-                    this.MaximizeBox = false;
-                    this.MinimizeBox = false;
-                }
-                else if (WebViewControls == "minimal_max")
-                {
-                    this.ControlBox = true;
-                    this.MaximizeBox = true;
-                    this.MinimizeBox = false;
-                }
-                else if (WebViewControls == "minimal_min")
-                {
-                    this.ControlBox = true;
-                    this.MaximizeBox = false;
-                    this.MinimizeBox = true;
-                }
-                if (WebViewColor == "DeepBlue")
-                {
-                    skinmgr.Theme = MaterialSkinManager.Themes.DARK;
-                    skinmgr.ColorScheme = new ColorScheme(Primary.Blue800, Primary.Blue900, Primary.Blue500, Accent.Blue200, TextShade.WHITE);
-                }
-                if (WebViewColor == "Gray" || WebViewColor == "DeepGray")
-                {
-                    skinmgr.Theme = MaterialSkinManager.Themes.DARK;
-                    skinmgr.ColorScheme = new ColorScheme(Primary.Grey800, Primary.Grey900, Primary.Grey500, Accent.LightBlue200, TextShade.WHITE);
-                }
-                if (WebViewColor == "DeepRed")
-                {
-                    skinmgr.Theme = MaterialSkinManager.Themes.DARK;
-                    skinmgr.ColorScheme = new ColorScheme(Primary.Red800, Primary.Red900, Primary.Red500, Accent.Red200, TextShade.WHITE);
-                }
-                if (WebViewColor == "DeepOrange")
-                {
-                    skinmgr.Theme = MaterialSkinManager.Themes.DARK;
-                    skinmgr.ColorScheme = new ColorScheme(Primary.Orange800, Primary.Orange900, Primary.Orange500, Accent.Orange200, TextShade.WHITE);
-                }
-                if (WebViewColor == "DeepGreen" || WebViewColor == "Green")
-                {
-                    skinmgr.Theme = MaterialSkinManager.Themes.DARK;
-                    skinmgr.ColorScheme = new ColorScheme(Primary.Green800, Primary.Green900, Primary.Green500, Accent.Green200, TextShade.WHITE);
-                }
-                if (WebViewColor == "DeepOrange")
-                {
-                    skinmgr.Theme = MaterialSkinManager.Themes.DARK;
-                    skinmgr.ColorScheme = new ColorScheme(Primary.Orange800, Primary.Orange900, Primary.Orange500, Accent.Orange200, TextShade.WHITE);
-                }
-
-                IntHeight = Convert.ToInt32(WebViewSizeHeight);
-                IntWidth = Convert.ToInt32(WebViewSizeWidth);
-                this.Size = new Size(IntWidth, IntHeight);
-            }
         }
 
         private void CEFCleanup()
@@ -191,6 +117,86 @@ namespace Material_Design_Desktop_Concept.Material.Web
         private void UIWebView_Load(object sender, EventArgs e)
         {
             WebViewBrowser.Dock = DockStyle.Bottom;
+            IntHeight = Convert.ToInt32(WebViewSizeHeight);
+            IntWidth = Convert.ToInt32(WebViewSizeWidth);
+            this.Size = new Size(IntWidth, IntHeight);
+            WebViewBrowser.Height = IntHeight - 66;
+
+            if (WebViewScrollBars == "TRUE")
+            {
+                WebViewBrowser.FrameLoadEnd += HideScrollbars;
+            }
+
+            if (WebViewOath == "TRUE")
+            {
+                WebViewBrowser = new ChromiumWebBrowser(WebViewDefURL);
+            }
+            else if (WebViewOath == "FALSE")
+            {
+                WebViewBrowser = new ChromiumWebBrowser(WebViewURL);
+            }
+
+            if (WebViewSizable == "TRUE")
+            {
+                this.Sizable = true;
+            }
+            else if (WebViewSizable == "FALSE")
+            {
+                this.Sizable = false;
+            }
+
+            if (WebViewControls == "FULL")
+            {
+                this.ControlBox = true;
+                this.MaximizeBox = true;
+                this.MinimizeBox = true;
+            }
+            else if (WebViewControls == "MINIMAL_CLOSE")
+            {
+                this.ControlBox = true;
+                this.MaximizeBox = false;
+                this.MinimizeBox = false;
+            }
+            else if (WebViewControls == "MINIMAL_MAX")
+            {
+                this.ControlBox = true;
+                this.MaximizeBox = true;
+                this.MinimizeBox = false;
+            }
+            else if (WebViewControls == "MINIMAL_MIN")
+            {
+                this.ControlBox = true;
+                this.MaximizeBox = false;
+                this.MinimizeBox = true;
+            }
+
+            if (WebViewColor == "DEEPBLUE")
+            {
+                skinmgr.Theme = MaterialSkinManager.Themes.DARK;
+                skinmgr.ColorScheme = new ColorScheme(Primary.Blue800, Primary.Blue900, Primary.Blue500, Accent.Blue200, TextShade.WHITE);
+            }
+            if (WebViewColor == "GRAY" || WebViewColor == "DEEPGRAY")
+            {
+                skinmgr.Theme = MaterialSkinManager.Themes.DARK;
+                skinmgr.ColorScheme = new ColorScheme(Primary.Grey800, Primary.Grey900, Primary.Grey500, Accent.LightBlue200, TextShade.WHITE);
+            }
+            if (WebViewColor == "DEEPRED")
+            {
+                skinmgr.Theme = MaterialSkinManager.Themes.DARK;
+                skinmgr.ColorScheme = new ColorScheme(Primary.Red800, Primary.Red900, Primary.Red500, Accent.Red200, TextShade.WHITE);
+            }
+            if (WebViewColor == "DEEPORANGE" || WebViewColor == "DEEPORANGE")
+            {
+                skinmgr.Theme = MaterialSkinManager.Themes.DARK;
+                skinmgr.ColorScheme = new ColorScheme(Primary.Orange800, Primary.Orange900, Primary.Orange500, Accent.Orange200, TextShade.WHITE);
+            }
+            if (WebViewColor == "DEEPGREEN" || WebViewColor == "GREEN")
+            {
+                skinmgr.Theme = MaterialSkinManager.Themes.DARK;
+                skinmgr.ColorScheme = new ColorScheme(Primary.Green800, Primary.Green900, Primary.Green500, Accent.Green200, TextShade.WHITE);
+            }
+            //MessageBox.Show(WebViewURL + Environment.NewLine + WebViewOath + Environment.NewLine + WebViewSizeHeight + Environment.NewLine + WebViewSizeWidth + Environment.NewLine + WebViewVer + Environment.NewLine + WebViewControls + Environment.NewLine + WebViewColor + Environment.NewLine);
+            this.Refresh();
         }
 
         private void UIWebView_FormClosing(object sender, FormClosingEventArgs e)
@@ -206,6 +212,11 @@ namespace Material_Design_Desktop_Concept.Material.Web
 
         private void TmrCheckMovable_Tick(object sender, EventArgs e)
         {
+        }
+
+        private void UIWebView_MaximumSizeChanged(object sender, EventArgs e)
+        {
+            WebViewBrowser.Height = this.Height - 66;
         }
     }
 }

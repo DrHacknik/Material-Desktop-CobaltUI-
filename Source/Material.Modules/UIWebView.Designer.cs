@@ -42,14 +42,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(519, 539);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "UIWebView";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WebView";
             this.TopMost = true;
+            this.MaximumSizeChanged += new System.EventHandler(this.UIWebView_MaximumSizeChanged);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UIWebView_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UIWebView_FormClosed);
             this.Load += new System.EventHandler(this.UIWebView_Load);

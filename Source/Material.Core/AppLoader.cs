@@ -65,6 +65,7 @@ namespace Material_Design_Desktop_Concept.Material.Core
                 UIWebView.WebViewSizeWidth = ModuleParser.GetSetting("webview", "webview_size_width");
                 UIWebView.WebViewScrollBars = ModuleParser.GetSetting("webview", "webview_scrollbars");
                 UIWebView.WebViewColor = ModuleParser.GetSetting("webview", "webview_color");
+                UIWebView.WebViewSizable = ModuleParser.GetSetting("webview", "webview_sizable");
                 UIWebView.WebViewURL = ModuleParser.GetSetting("webview", "webview_url");
                 UIWebView.WebViewVer = ModuleParser.GetSetting("webview", "webview_ver");
                 UIWebView.WebViewLockscreen = ModuleParser.GetSetting("webview", "webview_allow_lockscreen");
