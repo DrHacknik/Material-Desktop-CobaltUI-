@@ -1,4 +1,4 @@
-## This is the dependency base. 
+# This is the dependency base. 
 
 ## How modules work
 
@@ -13,26 +13,46 @@ required dependencies that you can list when making a module. That, and you can 
 
 ## Possible Variables: 
 
-### Example: 
+### Example (module `ini`): 
 ```ini
 ;This is webview based configuration settings. 
 ;Don't mess with this, or you may break the app. 
 [webview]
-webview_ver=65              --Minimum supported Chromium Version
-webview_url=www.url.com     --WebView, URL to load
-webview_size_width=1280     --WebView, Window Width
-webview_size_height=768     --WebView, Window Height
-webview_is_oath=false       --WebView, is the URL a OATH URL?
-webview_scrollbars=true     --WebView, does it need scrollbars enabled?
-webview_color=deepblue      --WebView, what colors does it need to be.
-webview_controls=full       --WebView, what controls does it need. "minimal_max, minimal_close, full, none." 
-webview_allow_lockscreen=false --Allow this webview to run on the Lockscreen?
-webview_sizable=true        --WebView, can the window be resized?
+webview_ver=65                  --Minimum supported Chromium Version
+webview_url=www.url.com         --WebView, URL to load
+webview_size_width=1280         --WebView, Window Width
+webview_size_height=768         --WebView, Window Height
+webview_is_oath=false           --WebView, is the URL a OATH URL?
+webview_scrollbars=true         --WebView, does it need scrollbars enabled?
+webview_color=deepblue          --WebView, what colors does it need to be.
+webview_controls=full           --WebView, what controls does it need. "minimal_max, minimal_close, full, none." 
+webview_allow_lockscreen=false  --Allow this webview to run on the Lockscreen?
+webview_sizable=true            --WebView, can the window be resized?
 
 ;This is app specific configuration. 
 ;Don't mess with this, unless you know what to do. 
 [app_options]
-allow_lockscreen_svc=true   --Allow the service to run on the lockscreen instance.
-allow_desktop_svc=true      --Allow the service to run on the desktop instance. 
-refresh_svc_rate=10         --The refresh rate (in intervals) for the service/s.
+allow_lockscreen_svc=true       --Allow the service to run on the lockscreen instance.
+allow_desktop_svc=true          --Allow the service to run on the desktop instance. 
+refresh_svc_rate=10             --The refresh rate (in intervals) for the service/s.
+```
+
+###  Example (Module `json`)
+
+```json
+{
+    "modulename": "ModuleName",             --ModuleName.
+    "moduletype": "Type",                   --Module Type, WebView or Executable.
+    "appicon512" : "icons/icon_512.png",    --Icon/s.
+    "appicon256" : "icons/icon_256.png", 
+    "appicon128" : "icons/icon_128.png", 
+    "appicon64" : "icons/icon_64.png", 
+    "appicon32" : "icons/icon_32.png", 
+    "depedencies": {                        --Dependencies that are required to run.
+        "dep" : "depURL"
+    },
+    "author" : "Username/Alias",            --User whom made the Module or contributed.
+    "version": "x.x.x.x",                   --Version of the module.
+    "version_build" : "XX"                  --Build ID or Build Version of the module.
+}
 ```
